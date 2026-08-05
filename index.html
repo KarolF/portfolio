@@ -357,21 +357,6 @@
     .about-text { padding: 34px; }
     .about-text p { color: #d8e2f2; font-size: 18px; }
 
-    .contact-card {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      align-items: center;
-      gap: 24px;
-      padding: 34px;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background:
-        linear-gradient(135deg, rgba(118,228,255,.11), rgba(255,111,159,.08)),
-        var(--panel-solid);
-    }
-    .contact-card h2 { font-size: clamp(36px, 6vw, 74px); line-height: 1; letter-spacing: -.06em; margin-bottom: 12px; }
-    .contact-card p { color: var(--muted); margin-bottom: 0; }
-
     .footer {
       padding: 34px 0;
       border-top: 1px solid var(--line);
@@ -381,7 +366,7 @@
     .footer .wrap { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
 
     @media (max-width: 980px) {
-      .feature-grid, .about-grid, .contact-card, .case-grid { grid-template-columns: 1fr; }
+      .feature-grid, .about-grid, .case-grid { grid-template-columns: 1fr; }
       .games-grid { grid-template-columns: repeat(3, 1fr); }
       .featured-work .games-grid { grid-template-columns: repeat(2, 1fr); }
   
@@ -413,7 +398,7 @@
       .featured-work .games-grid { grid-template-columns: 1fr; }
       .featured-work .game-card { grid-template-columns: 1fr; }
       .featured-work .game-card img { width: 100%; }
-      .info-card, .about-text, .big-stat, .contact-card { padding: 24px; }
+      .info-card, .about-text, .big-stat { padding: 24px; }
       .fact { grid-template-columns: 1fr; gap: 4px; }
       .tagline { min-height: auto; }
     }
@@ -449,7 +434,6 @@
 <a href="#featured">Featured</a>
 <a href="#games">Games</a>
 <a href="#about">About</a>
-<a href="#contact">Contact</a>
 </nav>
 </div>
 </header>
@@ -462,7 +446,6 @@
 <div class="button-row">
 <a class="button primary" href="#cosmopirates">View Steam Game</a>
 <a class="button secondary" href="#games">Play Browser Games</a>
-<a class="button" href="mailto:karol.dev.contact@gmail.com">Contact</a>
 </div>
 </div>
 </section>
@@ -967,21 +950,7 @@
 </div>
 </div>
 </section>
-<section id="contact">
-<div class="wrap">
-<div class="contact-card">
-<div>
-<h2>Contact</h2>
-<p>Available through email and public profiles.</p>
-</div>
-<div class="button-row">
-<a class="button primary" href="mailto:karol.dev.contact@gmail.com">Email</a>
-<a class="button" href="https://www.linkedin.com/in/karol-furmann-004182212/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
-<a class="button" href="https://x.com/elparole" rel="noopener noreferrer" target="_blank">X / Twitter</a>
-</div>
-</div>
-</div>
-</section>
+
 </main>
 <footer class="footer">
 <div class="wrap">
