@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Karol Furmann — Game Developer</title>
+<meta content="Karol Furmann is a game developer and programmer/designer of CosmoPirates, with 32 browser and mobile games. His work includes ECS-based gameplay systems, deterministic simulations, Phaser UI, localization tooling, and portal-specific demo export pipelines." name="description"/>
+<meta content="Karol Furmann — Game Developer" property="og:title"/>
+<meta content="Programmer and designer of CosmoPirates. ECS gameplay systems, deterministic simulations, Phaser UI, localization tools, and 32 browser/mobile games." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="assets/cosmopirates/screenshot_01.jpg" property="og:image"/>
+<link href="assets/favicon.png" rel="icon"/>
+<style>
+    :root {
+      --bg: #080a10;
+      --bg-2: #101521;
+      --panel: rgba(18, 24, 36, .84);
+      --panel-solid: #141b29;
+      --panel-2: #1b2436;
+      --text: #f4f7fb;
+      --muted: #a9b4c8;
+      --soft: #76829a;
+      --line: rgba(255, 255, 255, .12);
+      --accent: #76e4ff;
+      --accent-2: #ffcf5c;
+      --accent-3: #ff6f9f;
+      --max: 1160px;
+      --radius: 22px;
+      --shadow: 0 30px 100px rgba(0,0,0,.38);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 18% 12%, rgba(118,228,255,.18), transparent 32rem),
+        radial-gradient(circle at 80% 0%, rgba(255,207,92,.12), transparent 30rem),
+        radial-gradient(circle at 50% 70%, rgba(255,111,159,.08), transparent 34rem),
+        var(--bg);
+      line-height: 1.5;
+    }
+
+    a { color: inherit; }
+    img { display: block; max-width: 100%; }
+    .wrap { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(18px);
+      background: rgba(8, 10, 16, .74);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+      gap: 24px;
+    }
+
+    .brand {
+      text-decoration: none;
+      font-weight: 800;
+      letter-spacing: -.02em;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .nav-links a { text-decoration: none; }
+    .nav-links a:hover { color: var(--text); }
+
+    .hero {
+      position: relative;
+      min-height: 720px;
+      display: grid;
+      align-items: end;
+      overflow: hidden;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(8,10,16,.95) 0%, rgba(8,10,16,.72) 42%, rgba(8,10,16,.24) 100%),
+        linear-gradient(0deg, rgba(8,10,16,1) 0%, rgba(8,10,16,.08) 55%),
+        url('assets/cosmopirates/screenshot_01.jpg') center / cover no-repeat;
+      transform: scale(1.02);
+    }
+
+    .hero-content {
+      position: relative;
+      padding: 120px 0 92px;
+      max-width: 760px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,.06);
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 22px var(--accent); }
+
+    h1, h2, h3, p { margin-top: 0; }
+    h1 {
+      margin-bottom: 18px;
+      font-size: clamp(54px, 9vw, 116px);
+      line-height: .92;
+      letter-spacing: -.075em;
+    }
+
+    .hero-subtitle {
+      max-width: 700px;
+      font-size: clamp(18px, 2.2vw, 26px);
+      color: #dce5f5;
+      margin-bottom: 32px;
+    }
+
+    .button-row { display: flex; flex-wrap: wrap; gap: 14px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 18px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      text-decoration: none;
+      font-weight: 800;
+      background: rgba(255,255,255,.07);
+    }
+    .button.primary { background: var(--accent); color: #061017; border-color: transparent; }
+    .button.secondary { background: var(--accent-2); color: #171002; border-color: transparent; }
+    .button:hover { transform: translateY(-1px); }
+
+    section { padding: 88px 0; }
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 28px;
+      margin-bottom: 30px;
+    }
+    .section-head h2 {
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1;
+      letter-spacing: -.05em;
+      margin-bottom: 0;
+    }
+    .section-head p {
+      max-width: 520px;
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1.08fr .92fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .video-card, .info-card, .panel {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .video-frame { position: relative; aspect-ratio: 16 / 9; background: #000; }
+    .video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+    .info-card { padding: 32px; }
+    .info-card h3 { font-size: 40px; line-height: 1; letter-spacing: -.04em; margin-bottom: 14px; }
+    .info-card .lead { color: #dde6f5; font-size: 18px; margin-bottom: 22px; }
+
+    .facts { display: grid; gap: 10px; margin: 24px 0; }
+    .fact {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 14px;
+      padding: 12px 0;
+      border-top: 1px solid var(--line);
+    }
+    .fact span:first-child { color: var(--soft); }
+    .fact span:last-child { color: var(--text); font-weight: 700; }
+
+
+    .case-study {
+      margin-top: 24px;
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(255,255,255,.065), rgba(255,255,255,.032));
+      box-shadow: var(--shadow);
+    }
+    .case-study h3 {
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1;
+      letter-spacing: -.04em;
+      margin-bottom: 14px;
+    }
+    .case-study h4 {
+      margin: 0 0 12px;
+      color: var(--accent-2);
+      letter-spacing: -.02em;
+      font-size: 18px;
+    }
+    .case-study p {
+      color: #d8e2f2;
+      font-size: 17px;
+      max-width: 900px;
+      margin-bottom: 24px;
+    }
+    .case-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 20px;
+    }
+    .case-block {
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255,255,255,.045);
+    }
+    .case-list {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+    .case-list li { margin: 0 0 10px; }
+    .case-list strong { color: var(--text); }
+
+    .screenshot-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+      margin-top: 22px;
+    }
+    .screenshot-grid a {
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: var(--panel-2);
+    }
+    .screenshot-grid img { width: 100%; height: 115px; object-fit: cover; transition: transform .18s ease; }
+    .screenshot-grid a:hover img { transform: scale(1.035); }
+
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .game-card {
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.035));
+      padding: 14px;
+      display: grid;
+      gap: 14px;
+      transition: transform .18s ease, border-color .18s ease, background .18s ease;
+    }
+    .game-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(118,228,255,.45);
+      background: linear-gradient(180deg, rgba(118,228,255,.09), rgba(255,255,255,.035));
+    }
+    .game-card img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: #090c12;
+    }
+    .game-card h3 { font-size: 18px; line-height: 1.1; margin-bottom: 8px; letter-spacing: -.02em; }
+    .tagline { min-height: 48px; color: var(--muted); font-size: 14px; margin-bottom: 14px; }
+    .meta-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+    .meta-row span, .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 26px;
+      padding: 0 9px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      color: var(--muted);
+      background: rgba(255,255,255,.045);
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .text-link { color: var(--accent); font-weight: 800; text-decoration: none; }
+    .text-link:hover { text-decoration: underline; }
+
+    .featured-work .games-grid { grid-template-columns: repeat(2, 1fr); }
+    .featured-work .game-card { grid-template-columns: 132px 1fr; align-items: start; }
+    .featured-work .game-card img { width: 132px; }
+    .featured-work .game-card { background: linear-gradient(180deg, rgba(255,207,92,.13), rgba(255,255,255,.035)); }
+
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 28px;
+    }
+    .big-stat {
+      padding: 34px;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, rgba(118,228,255,.15), rgba(255,207,92,.09));
+      border: 1px solid var(--line);
+      min-height: 100%;
+    }
+    .big-stat strong { display: block; font-size: clamp(64px, 10vw, 120px); line-height: .85; letter-spacing: -.07em; }
+    .big-stat span { color: var(--muted); font-weight: 800; }
+    .about-text { padding: 34px; }
+    .about-text p { color: #d8e2f2; font-size: 18px; }
+
+    .contact-card {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 24px;
+      padding: 34px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background:
+        linear-gradient(135deg, rgba(118,228,255,.11), rgba(255,111,159,.08)),
+        var(--panel-solid);
+    }
+    .contact-card h2 { font-size: clamp(36px, 6vw, 74px); line-height: 1; letter-spacing: -.06em; margin-bottom: 12px; }
+    .contact-card p { color: var(--muted); margin-bottom: 0; }
+
+    .footer {
+      padding: 34px 0;
+      border-top: 1px solid var(--line);
+      color: var(--soft);
+      font-size: 14px;
+    }
+    .footer .wrap { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+
+    @media (max-width: 980px) {
+      .feature-grid, .about-grid, .contact-card, .case-grid { grid-template-columns: 1fr; }
+      .games-grid { grid-template-columns: repeat(3, 1fr); }
+      .featured-work .games-grid { grid-template-columns: repeat(2, 1fr); }
+      .screenshot-grid { grid-template-columns: repeat(2, 1fr); }
+      .section-head { display: block; }
+      .section-head p { margin-top: 14px; }
+    }
+
+    @media (max-width: 720px) {
+      .wrap { width: min(100% - 28px, var(--max)); }
+      .nav { height: auto; min-height: 66px; align-items: flex-start; padding: 15px 0; }
+      .nav-links { gap: 12px; flex-wrap: wrap; justify-content: flex-end; font-size: 13px; }
+      .hero { min-height: 620px; }
+      .hero-content { padding: 90px 0 70px; }
+      section { padding: 64px 0; }
+      .games-grid { grid-template-columns: repeat(2, 1fr); }
+      .featured-work .games-grid { grid-template-columns: 1fr; }
+      .featured-work .game-card { grid-template-columns: 1fr; }
+      .featured-work .game-card img { width: 100%; }
+      .info-card, .about-text, .big-stat, .contact-card { padding: 24px; }
+      .fact { grid-template-columns: 1fr; gap: 4px; }
+      .tagline { min-height: auto; }
+    }
+
+    @media (max-width: 460px) {
+      .brand { font-size: 14px; }
+      .nav-links a:nth-child(3), .nav-links a:nth-child(4) { display: none; }
+      .games-grid, .featured-work .games-grid { grid-template-columns: 1fr; }
+      .button { width: 100%; }
+      .screenshot-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<header class="site-header">
+<div class="wrap nav">
+<a class="brand" href="#top">Karol Furmann</a>
+<nav aria-label="Primary navigation" class="nav-links">
+<a href="#cosmopirates">CosmoPirates</a>
+<a href="#featured">Featured</a>
+<a href="#games">Games</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+<main id="top">
+<section aria-label="Intro" class="hero">
+<div class="wrap hero-content">
+<div class="eyebrow"><span class="dot"></span> Game Developer</div>
+<h1>Karol Furmann</h1>
+<p class="hero-subtitle">Programmer and designer of <strong>CosmoPirates</strong>, plus 32 browser and mobile games built for fast, accessible play.</p>
+<div class="button-row">
+<a class="button primary" href="#cosmopirates">View Steam Game</a>
+<a class="button secondary" href="#games">Play Browser Games</a>
+<a class="button" href="mailto:karol.dev.contact@gmail.com">Contact</a>
+</div>
+</div>
+</section>
+<section id="cosmopirates">
+<div class="wrap">
+<div class="section-head">
+<h2>Featured Steam Game</h2>
+<p>Released commercial PC game. Card battling, deck building, cartoon comedy, and colorful space exploration.</p>
+</div>
+<div class="feature-grid">
+<div class="video-card">
+<div class="video-frame">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" src="https://www.youtube.com/embed/c9H46nA3TlM" title="CosmoPirates trailer"></iframe>
+</div>
+</div>
+<article class="info-card">
+<h3>CosmoPirates</h3>
+<p class="lead">CosmoPirates is a cartoonish sci-fi card battler and deck-building game set in a colorful, endless space. The game combines turn-based combat, ship progression, crew management, procedural map generation, and data-driven content workflows.</p>
+<div class="facts">
+<div class="fact"><span>Role</span><span>Programmer, Designer</span></div>
+<div class="fact"><span>Status</span><span>Released</span></div>
+<div class="fact"><span>Platform</span><span>Steam / PC</span></div>
+<div class="fact"><span>Tech</span><span>Phaser, TypeScript, ECS, Geotic, Electron, JSON tooling, Google Sheets scripting</span></div>
+</div>
+<div class="button-row">
+<a class="button primary" href="https://store.steampowered.com/app/2466240/CosmoPirates/?beta=1" rel="noopener noreferrer" target="_blank">Steam Page</a>
+<a class="button" href="https://www.youtube.com/watch?v=c9H46nA3TlM" rel="noopener noreferrer" target="_blank">Trailer</a>
+</div>
+</article>
+</div>
+<div aria-label="CosmoPirates screenshots" class="screenshot-grid">
+<a href="assets/cosmopirates/screenshot_01.jpg" rel="noopener noreferrer" target="_blank"><img alt="CosmoPirates screenshot 1" loading="lazy" src="assets/cosmopirates/screenshot_01.jpg"/></a>
+<a href="assets/cosmopirates/screenshot_02.jpg" rel="noopener noreferrer" target="_blank"><img alt="CosmoPirates screenshot 2" loading="lazy" src="assets/cosmopirates/screenshot_02.jpg"/></a>
+<a href="assets/cosmopirates/screenshot_03.jpg" rel="noopener noreferrer" target="_blank"><img alt="CosmoPirates screenshot 3" loading="lazy" src="assets/cosmopirates/screenshot_03.jpg"/></a>
+<a href="assets/cosmopirates/screenshot_04.jpg" rel="noopener noreferrer" target="_blank"><img alt="CosmoPirates screenshot 4" loading="lazy" src="assets/cosmopirates/screenshot_04.jpg"/></a>
+<a href="assets/cosmopirates/screenshot_05.jpg" rel="noopener noreferrer" target="_blank"><img alt="CosmoPirates screenshot 5" loading="lazy" src="assets/cosmopirates/screenshot_05.jpg"/></a>
+</div>
+<article class="case-study" aria-label="CosmoPirates project description">
+<h3>Project Breakdown</h3>
+<p>CosmoPirates was built as a full commercial PC game with additional browser demo builds released on portals such as CrazyGames, Newgrounds, and Armor Games. My work focused on gameplay architecture, technical systems, UI, content workflows, localization tooling, and portal-specific export automation.</p>
+<div class="case-grid">
+<div class="case-block">
+<h4>Gameplay Architecture</h4>
+<ul class="case-list">
+<li><strong>Custom ECS structure:</strong> designed an ECS-based architecture for a turn-based card battler using Phaser, TypeScript, and Geotic.</li>
+<li><strong>View-independent simulation:</strong> implemented lockstep-style gameplay logic that can run without the visual layer.</li>
+<li><strong>AI combat testing:</strong> built simulations of AI-vs-AI fights to test combat behavior, balance, and edge cases.</li>
+<li><strong>Procedural maps:</strong> used Wave Function Collapse for map generation and repeatable content variation.</li>
+</ul>
+</div>
+<div class="case-block">
+<h4>UI and Performance</h4>
+<ul class="case-list">
+<li><strong>Rich Phaser UI:</strong> created complex game interfaces directly in Phaser.</li>
+<li><strong>Pixel-perfect layout:</strong> focused on clean presentation, readable screens, and consistent visual alignment.</li>
+<li><strong>Lightweight font usage:</strong> kept text rendering practical and performance-friendly.</li>
+<li><strong>Separation of systems:</strong> kept simulation, game data, and presentation layers independent.</li>
+</ul>
+</div>
+<div class="case-block">
+<h4>Data-Driven Content Tools</h4>
+<ul class="case-list">
+<li><strong>Designer-friendly JSON config:</strong> built systems where cards and gameplay content can be edited without code changes.</li>
+<li><strong>Reusable content pipeline:</strong> applied the same structure to items, crew members, ships, buffs, dialogue options, and other game data.</li>
+<li><strong>Translation workflow:</strong> created Google Sheets scripts so translators could add languages and export ready-to-use in-game JSON files.</li>
+</ul>
+</div>
+<div class="case-block">
+<h4>Demo Distribution and Promotion</h4>
+<ul class="case-list">
+<li><strong>Portal demo builds:</strong> released browser demos on CrazyGames, Newgrounds, and Armor Games.</li>
+<li><strong>Steam funnel:</strong> used web demos as promotion channels linking players back to the Steam page.</li>
+<li><strong>Automated exports:</strong> created scripts integrating multiple web game portal APIs, allowing portal-specific demo builds to be generated with one command.</li>
+</ul>
+</div>
+</div>
+</article>
+</div>
+</section>
+<section class="featured-work" id="featured">
+<div class="wrap">
+<div class="section-head">
+<h2>Selected Browser Games</h2>
+<p>Four highlighted browser/mobile projects from the larger game archive.</p>
+</div>
+<div class="games-grid">
+<article class="game-card featured-card" data-genre="shooter / action">
+<a aria-label="Play Laser Adventures" href="https://games.blackmoondev.com/laseradventures" rel="noopener noreferrer" target="_blank">
+<img alt="Laser Adventures icon" height="256" loading="lazy" src="assets/games/laseradventures.png" width="256"/>
+</a>
+<div>
+<h3>Laser Adventures</h3>
+<p class="tagline">Fast-paced mobile shooting game made in Construct 2. Players fight swarms of aliens, collect upgrades, and face boss encounters across browser, PC, Android, and iOS builds.</p>
+<div class="meta-row"><span>Shooter / Action</span><span>Construct 2</span><span>Browser / PC / Android / iOS</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/laseradventures" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card featured-card" data-genre="physics puzzle / sports">
+<a aria-label="Play Basketball Master 2" href="https://games.blackmoondev.com/basketballmaster2" rel="noopener noreferrer" target="_blank">
+<img alt="Basketball Master 2 icon" height="256" loading="lazy" src="assets/games/basketballmaster2.png" width="256"/>
+</a>
+<div>
+<h3>Basketball Master 2</h3>
+<p class="tagline">The second part of a physics-based basketball puzzle game built with Box2D. It features dozens of handcrafted levels with moving obstacles, teleporters, breakable objects, bumpers, and wind blowers, playable on browsers, PC, Android, and iOS.</p>
+<div class="meta-row"><span>Physics Puzzle</span><span>Box2D</span><span>Browser / PC / Android / iOS</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/basketballmaster2" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card featured-card" data-genre="skill action / sports">
+<a aria-label="Play Groovy Ski" href="https://games.blackmoondev.com/groovyski" rel="noopener noreferrer" target="_blank">
+<img alt="Groovy Ski icon" height="256" loading="lazy" src="assets/games/groovyski.png" width="256"/>
+</a>
+<div>
+<h3>Groovy Ski</h3>
+<p class="tagline">Fast-paced, humorous skill-action skiing game with multiple level generators and unlockable character skins. Designed for quick sessions on browsers, PC, Android, and iOS.</p>
+<div class="meta-row"><span>Skill Action</span><span>Level Generators</span><span>Browser / PC / Android / iOS</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/groovyski" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card featured-card" data-genre="pinball / physics">
+<a aria-label="Play Zoo Pinball" href="https://games.blackmoondev.com/zoopinball" rel="noopener noreferrer" target="_blank">
+<img alt="Zoo Pinball icon" height="256" loading="lazy" src="assets/games/zoopinball.png" width="256"/>
+</a>
+<div>
+<h3>Zoo Pinball</h3>
+<p class="tagline">Physics-based flipper pinball game with quest objectives and a playful zoo setting. Built around Box2D physics to simulate real pinball behavior across browser, PC, Android, and iOS.</p>
+<div class="meta-row"><span>Pinball / Arcade</span><span>Box2D</span><span>Browser / PC / Android / iOS</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/zoopinball" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section id="games">
+<div class="wrap">
+<div class="section-head">
+<h2>32 Browser &amp; Mobile Games</h2>
+<p>Playable web games covering arcade, puzzle, sports, cooking, hidden-object, action, and casual formats.</p>
+</div>
+<div class="games-grid">
+<article class="game-card" data-genre="word / puzzle">
+<a aria-label="Play Word To Find" href="https://games.blackmoondev.com/word_to_find/" rel="noopener noreferrer" target="_blank">
+<img alt="Word To Find icon" height="256" loading="lazy" src="assets/games/word_to_find.png" width="256"/>
+</a>
+<div>
+<h3>Word To Find</h3>
+<p class="tagline">Browser/mobile game built for short-session play.</p>
+<div class="meta-row"><span>Word / Puzzle</span><span>Browser / Mobile</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/word_to_find/" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card" data-genre="puzzle / casual">
+<a aria-label="Play Farmer's Market" href="https://games.blackmoondev.com/farmersmarket/" rel="noopener noreferrer" target="_blank">
+<img alt="Farmer's Market icon" height="256" loading="lazy" src="assets/games/farmersmarket.png" width="256"/>
+</a>
+<div>
+<h3>Farmer's Market</h3>
+<p class="tagline">Browser/mobile game built for short-session play.</p>
+<div class="meta-row"><span>Puzzle / Casual</span><span>Browser / Mobile</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/farmersmarket/" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card" data-genre="racing / arcade">
+<a aria-label="Play Offroad Madness" href="https://games.blackmoondev.com/offroadmadness/" rel="noopener noreferrer" target="_blank">
+<img alt="Offroad Madness icon" height="256" loading="lazy" src="assets/games/offroadmadness.png" width="256"/>
+</a>
+<div>
+<h3>Offroad Madness</h3>
+<p class="tagline">Browser/mobile game built for short-session play.</p>
+<div class="meta-row"><span>Racing / Arcade</span><span>Browser / Mobile</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/offroadmadness/" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card" data-genre="arcade / action">
+<a aria-label="Play Bridge of Doom" href="https://games.blackmoondev.com/bridgeofdoom" rel="noopener noreferrer" target="_blank">
+<img alt="Bridge of Doom icon" height="256" loading="lazy" src="assets/games/bridgeofdoom.png" width="256"/>
+</a>
+<div>
+<h3>Bridge of Doom</h3>
+<p class="tagline">Browser/mobile game built for short-session play.</p>
+<div class="meta-row"><span>Arcade / Action</span><span>Browser / Mobile</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/bridgeofdoom" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card featured-card" data-genre="shooter / action">
+<a aria-label="Play Laser Adventures" href="https://games.blackmoondev.com/laseradventures" rel="noopener noreferrer" target="_blank">
+<img alt="Laser Adventures icon" height="256" loading="lazy" src="assets/games/laseradventures.png" width="256"/>
+</a>
+<div>
+<h3>Laser Adventures</h3>
+<p class="tagline">Fast-paced mobile shooting game made in Construct 2. Players fight swarms of aliens, collect upgrades, and face boss encounters across browser, PC, Android, and iOS builds.</p>
+<div class="meta-row"><span>Shooter / Action</span><span>Construct 2</span><span>Browser / PC / Android / iOS</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/laseradventures" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card" data-genre="puzzle">
+<a aria-label="Play Riddle Cubes" href="https://games.blackmoondev.com/riddlecubes" rel="noopener noreferrer" target="_blank">
+<img alt="Riddle Cubes icon" height="256" loading="lazy" src="assets/games/riddlecubes.png" width="256"/>
+</a>
+<div>
+<h3>Riddle Cubes</h3>
+<p class="tagline">Browser/mobile game built for short-session play.</p>
+<div class="meta-row"><span>Puzzle</span><span>Browser / Mobile</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/riddlecubes" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card" data-genre="puzzle / matching">
+<a aria-label="Play Twinz" href="https://blackmoondev.com/twinz" rel="noopener noreferrer" target="_blank">
+<img alt="Twinz icon" height="256" loading="lazy" src="assets/games/twinz.png" width="256"/>
+</a>
+<div>
+<h3>Twinz</h3>
+<p class="tagline">Browser/mobile game built for short-session play.</p>
+<div class="meta-row"><span>Puzzle / Matching</span><span>Browser / Mobile</span></div>
+<a class="text-link" href="https://blackmoondev.com/twinz" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card featured-card" data-genre="physics puzzle / sports">
+<a aria-label="Play Basketball Master 2" href="https://games.blackmoondev.com/basketballmaster2" rel="noopener noreferrer" target="_blank">
+<img alt="Basketball Master 2 icon" height="256" loading="lazy" src="assets/games/basketballmaster2.png" width="256"/>
+</a>
+<div>
+<h3>Basketball Master 2</h3>
+<p class="tagline">The second part of a physics-based basketball puzzle game built with Box2D. It features dozens of handcrafted levels with moving obstacles, teleporters, breakable objects, bumpers, and wind blowers, playable on browsers, PC, Android, and iOS.</p>
+<div class="meta-row"><span>Physics Puzzle</span><span>Box2D</span><span>Browser / PC / Android / iOS</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/basketballmaster2" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card featured-card" data-genre="skill action / sports">
+<a aria-label="Play Groovy Ski" href="https://games.blackmoondev.com/groovyski" rel="noopener noreferrer" target="_blank">
+<img alt="Groovy Ski icon" height="256" loading="lazy" src="assets/games/groovyski.png" width="256"/>
+</a>
+<div>
+<h3>Groovy Ski</h3>
+<p class="tagline">Fast-paced, humorous skill-action skiing game with multiple level generators and unlockable character skins. Designed for quick sessions on browsers, PC, Android, and iOS.</p>
+<div class="meta-row"><span>Skill Action</span><span>Level Generators</span><span>Browser / PC / Android / iOS</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/groovyski" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card" data-genre="arcade / casual">
+<a aria-label="Play Veggi Rabbit" href="https://games.blackmoondev.com/veggirabbit" rel="noopener noreferrer" target="_blank">
+<img alt="Veggi Rabbit icon" height="256" loading="lazy" src="assets/games/veggirabbit.svg" width="256"/>
+</a>
+<div>
+<h3>Veggi Rabbit</h3>
+<p class="tagline">Browser/mobile game built for short-session play.</p>
+<div class="meta-row"><span>Arcade / Casual</span><span>Browser / Mobile</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/veggirabbit" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article><article class="game-card" data-genre="arcade / casual"><a aria-label="Play Doonies" href="https://games.blackmoondev.com/doonies/" rel="noopener noreferrer" target="_blank"><img alt="Doonies icon" height="256" loading="lazy" src="assets/games/doonies.png" width="256"/></a><div><h3>Doonies</h3><p class="tagline">Browser/mobile game built for short-session play.</p><div class="meta-row"><span>Arcade / Casual</span><span>Browser / Mobile</span></div><a class="text-link" href="https://games.blackmoondev.com/doonies/" rel="noopener noreferrer" target="_blank">Play game</a></div></article>
+<article class="game-card" data-genre="action / arcade">
+<a aria-label="Play Alien Attack" href="https://games.blackmoondev.com/alienattack" rel="noopener noreferrer" target="_blank">
+<img alt="Alien Attack icon" height="256" loading="lazy" src="assets/games/alienattack.png" width="256"/>
+</a>
+<div>
+<h3>Alien Attack</h3>
+<p class="tagline">Browser/mobile game built for short-session play.</p>
+<div class="meta-row"><span>Action / Arcade</span><span>Browser / Mobile</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/alienattack" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card" data-genre="puzzle / logic">
+<a aria-label="Play Robotion" href="https://games.blackmoondev.com/robotion" rel="noopener noreferrer" target="_blank">
+<img alt="Robotion icon" height="256" loading="lazy" src="assets/games/robotion.png" width="256"/>
+</a>
+<div>
+<h3>Robotion</h3>
+<p class="tagline">Browser/mobile game built for short-session play.</p>
+<div class="meta-row"><span>Puzzle / Logic</span><span>Browser / Mobile</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/robotion" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card featured-card" data-genre="pinball / physics">
+<a aria-label="Play Zoo Pinball" href="https://games.blackmoondev.com/zoopinball" rel="noopener noreferrer" target="_blank">
+<img alt="Zoo Pinball icon" height="256" loading="lazy" src="assets/games/zoopinball.png" width="256"/>
+</a>
+<div>
+<h3>Zoo Pinball</h3>
+<p class="tagline">Physics-based flipper pinball game with quest objectives and a playful zoo setting. Built around Box2D physics to simulate real pinball behavior across browser, PC, Android, and iOS.</p>
+<div class="meta-row"><span>Pinball / Arcade</span><span>Box2D</span><span>Browser / PC / Android / iOS</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/zoopinball" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card" data-genre="hidden object">
+<a aria-label="Play Where's Tom" href="https://games.blackmoondev.com/wherestom" rel="noopener noreferrer" target="_blank">
+<img alt="Where's Tom icon" height="256" loading="lazy" src="assets/games/wherestom.png" width="256"/>
+</a>
+<div>
+<h3>Where's Tom</h3>
+<p class="tagline">Browser/mobile game built for short-session play.</p>
+<div class="meta-row"><span>Hidden Object</span><span>Browser / Mobile</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/wherestom" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card" data-genre="sports / arcade">
+<a aria-label="Play Basketball Master" href="https://games.blackmoondev.com/basketball" rel="noopener noreferrer" target="_blank">
+<img alt="Basketball Master icon" height="256" loading="lazy" src="assets/games/basketball.png" width="256"/>
+</a>
+<div>
+<h3>Basketball Master</h3>
+<p class="tagline">Browser/mobile game built for short-session play.</p>
+<div class="meta-row"><span>Sports / Arcade</span><span>Browser / Mobile</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/basketball" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card" data-genre="arcade / action">
+<a aria-label="Play Pigeon Bomber" href="https://games.blackmoondev.com/pigeon" rel="noopener noreferrer" target="_blank">
+<img alt="Pigeon Bomber icon" height="256" loading="lazy" src="assets/games/pigeon.png" width="256"/>
+</a>
+<div>
+<h3>Pigeon Bomber</h3>
+<p class="tagline">Browser/mobile game built for short-session play.</p>
+<div class="meta-row"><span>Arcade / Action</span><span>Browser / Mobile</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/pigeon" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card" data-genre="arcade / platform">
+<a aria-label="Play Little Bouncing Guys" href="https://games.blackmoondev.com/lbg" rel="noopener noreferrer" target="_blank">
+<img alt="Little Bouncing Guys icon" height="256" loading="lazy" src="assets/games/lbg.png" width="256"/>
+</a>
+<div>
+<h3>Little Bouncing Guys</h3>
+<p class="tagline">Browser/mobile game built for short-session play.</p>
+<div class="meta-row"><span>Arcade / Platform</span><span>Browser / Mobile</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/lbg" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card" data-genre="arcade / action">
+<a aria-label="Play Pie Attack" href="https://games.blackmoondev.com/pieattack" rel="noopener noreferrer" target="_blank">
+<img alt="Pie Attack icon" height="256" loading="lazy" src="assets/games/pieattack.png" width="256"/>
+</a>
+<div>
+<h3>Pie Attack</h3>
+<p class="tagline">Browser/mobile game built for short-session play.</p>
+<div class="meta-row"><span>Arcade / Action</span><span>Browser / Mobile</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/pieattack" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card" data-genre="arcade / sports">
+<a aria-label="Play Rafting Adventure" href="https://games.blackmoondev.com/rafting" rel="noopener noreferrer" target="_blank">
+<img alt="Rafting Adventure icon" height="256" loading="lazy" src="assets/games/rafting.png" width="256"/>
+</a>
+<div>
+<h3>Rafting Adventure</h3>
+<p class="tagline">Browser/mobile game built for short-session play.</p>
+<div class="meta-row"><span>Arcade / Sports</span><span>Browser / Mobile</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/rafting" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card" data-genre="arcade / skill">
+<a aria-label="Play Flying School" href="https://games.blackmoondev.com/flyingschool" rel="noopener noreferrer" target="_blank">
+<img alt="Flying School icon" height="256" loading="lazy" src="assets/games/flyingschool.png" width="256"/>
+</a>
+<div>
+<h3>Flying School</h3>
+<p class="tagline">Browser/mobile game built for short-session play.</p>
+<div class="meta-row"><span>Arcade / Skill</span><span>Browser / Mobile</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/flyingschool" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card" data-genre="puzzle / arcade">
+<a aria-label="Play Looney Roonks" href="https://games.blackmoondev.com/looneyroonks" rel="noopener noreferrer" target="_blank">
+<img alt="Looney Roonks icon" height="256" loading="lazy" src="assets/games/looneyroonks.png" width="256"/>
+</a>
+<div>
+<h3>Looney Roonks</h3>
+<p class="tagline">Browser/mobile game built for short-session play.</p>
+<div class="meta-row"><span>Puzzle / Arcade</span><span>Browser / Mobile</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/looneyroonks" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card" data-genre="puzzle / logic">
+<a aria-label="Play Rectangzings" href="https://games.blackmoondev.com/rectangzings" rel="noopener noreferrer" target="_blank">
+<img alt="Rectangzings icon" height="256" loading="lazy" src="assets/games/rectangzings.png" width="256"/>
+</a>
+<div>
+<h3>Rectangzings</h3>
+<p class="tagline">Browser/mobile game built for short-session play.</p>
+<div class="meta-row"><span>Puzzle / Logic</span><span>Browser / Mobile</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/rectangzings" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card" data-genre="puzzle / casual">
+<a aria-label="Play Jellyland" href="https://games.blackmoondev.com/jellyland" rel="noopener noreferrer" target="_blank">
+<img alt="Jellyland icon" height="256" loading="lazy" src="assets/games/jellyland.png" width="256"/>
+</a>
+<div>
+<h3>Jellyland</h3>
+<p class="tagline">Browser/mobile game built for short-session play.</p>
+<div class="meta-row"><span>Puzzle / Casual</span><span>Browser / Mobile</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/jellyland" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card" data-genre="puzzle">
+<a aria-label="Play Swipe Art Puzzle" href="https://games.blackmoondev.com/swipeart" rel="noopener noreferrer" target="_blank">
+<img alt="Swipe Art Puzzle icon" height="256" loading="lazy" src="assets/games/swipeart.png" width="256"/>
+</a>
+<div>
+<h3>Swipe Art Puzzle</h3>
+<p class="tagline">Browser/mobile game built for short-session play.</p>
+<div class="meta-row"><span>Puzzle</span><span>Browser / Mobile</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/swipeart" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card" data-genre="sports / casual">
+<a aria-label="Play Mini Golf" href="https://games.blackmoondev.com/minigolf" rel="noopener noreferrer" target="_blank">
+<img alt="Mini Golf icon" height="256" loading="lazy" src="assets/games/minigolf.png" width="256"/>
+</a>
+<div>
+<h3>Mini Golf</h3>
+<p class="tagline">Browser/mobile game built for short-session play.</p>
+<div class="meta-row"><span>Sports / Casual</span><span>Browser / Mobile</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/minigolf" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card" data-genre="puzzle / arcade">
+<a aria-label="Play Greedy Gnomes" href="https://games.blackmoondev.com/greedygnomes" rel="noopener noreferrer" target="_blank">
+<img alt="Greedy Gnomes icon" height="256" loading="lazy" src="assets/games/greedygnomes.png" width="256"/>
+</a>
+<div>
+<h3>Greedy Gnomes</h3>
+<p class="tagline">Browser/mobile game built for short-session play.</p>
+<div class="meta-row"><span>Puzzle / Arcade</span><span>Browser / Mobile</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/greedygnomes" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card" data-genre="action / arcade">
+<a aria-label="Play Evil Wyrm" href="https://games.blackmoondev.com/wyrm" rel="noopener noreferrer" target="_blank">
+<img alt="Evil Wyrm icon" height="256" loading="lazy" src="assets/games/wyrm.png" width="256"/>
+</a>
+<div>
+<h3>Evil Wyrm</h3>
+<p class="tagline">Browser/mobile game built for short-session play.</p>
+<div class="meta-row"><span>Action / Arcade</span><span>Browser / Mobile</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/wyrm" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card" data-genre="adventure / arcade">
+<a aria-label="Play Craig of the Creek: Scout of the Other Side" href="https://games.blackmoondev.com/craigensot" rel="noopener noreferrer" target="_blank">
+<img alt="Craig of the Creek: Scout of the Other Side icon" height="256" loading="lazy" src="assets/games/craigensot.png" width="256"/>
+</a>
+<div>
+<h3>Craig of the Creek: Scout of the Other Side</h3>
+<p class="tagline">Browser/mobile game built for short-session play.</p>
+<div class="meta-row"><span>Adventure / Arcade</span><span>Browser / Mobile</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/craigensot" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card" data-genre="cooking / casual">
+<a aria-label="Play Yummy Taco" href="https://games.blackmoondev.com/taco" rel="noopener noreferrer" target="_blank">
+<img alt="Yummy Taco icon" height="256" loading="lazy" src="assets/games/taco.png" width="256"/>
+</a>
+<div>
+<h3>Yummy Taco</h3>
+<p class="tagline">Browser/mobile game built for short-session play.</p>
+<div class="meta-row"><span>Cooking / Casual</span><span>Browser / Mobile</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/taco" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card" data-genre="arcade / skill">
+<a aria-label="Play Jom Jom Jump" href="https://games.blackmoondev.com/jomjom" rel="noopener noreferrer" target="_blank">
+<img alt="Jom Jom Jump icon" height="256" loading="lazy" src="assets/games/jomjom.png" width="256"/>
+</a>
+<div>
+<h3>Jom Jom Jump</h3>
+<p class="tagline">Browser/mobile game built for short-session play.</p>
+<div class="meta-row"><span>Arcade / Skill</span><span>Browser / Mobile</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/jomjom" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+<article class="game-card" data-genre="cooking / casual">
+<a aria-label="Play Crazy Pizza" href="https://games.blackmoondev.com/pizza" rel="noopener noreferrer" target="_blank">
+<img alt="Crazy Pizza icon" height="256" loading="lazy" src="assets/games/pizza.png" width="256"/>
+</a>
+<div>
+<h3>Crazy Pizza</h3>
+<p class="tagline">Browser/mobile game built for short-session play.</p>
+<div class="meta-row"><span>Cooking / Casual</span><span>Browser / Mobile</span></div>
+<a class="text-link" href="https://games.blackmoondev.com/pizza" rel="noopener noreferrer" target="_blank">Play game</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section id="about">
+<div class="wrap">
+<div class="about-grid">
+<div class="big-stat">
+<strong>32+</strong>
+<span>browser and mobile games shipped</span>
+</div>
+<div class="panel about-text">
+<h2>About</h2>
+<p>Karol Furmann is a game developer focused on commercial PC games and browser/mobile games. He worked as programmer and designer on CosmoPirates and has built a catalog of 32 short-session web and mobile games.</p>
+<p>Core tools and technologies include Phaser, TypeScript, ECS architecture, Geotic, Electron, JSON-based content pipelines, localization tooling, and browser portal export automation.</p>
+<div aria-label="Skills" class="skills">
+<span class="pill">Gameplay Programming</span>
+<span class="pill">Game Design</span>
+<span class="pill">Phaser</span>
+<span class="pill">TypeScript</span>
+<span class="pill">ECS</span>
+<span class="pill">Electron</span>
+<span class="pill">Browser Games</span>
+<span class="pill">Mobile Web</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="contact">
+<div class="wrap">
+<div class="contact-card">
+<div>
+<h2>Contact</h2>
+<p>Available through email and public profiles.</p>
+</div>
+<div class="button-row">
+<a class="button primary" href="mailto:karol.dev.contact@gmail.com">Email</a>
+<a class="button" href="https://www.linkedin.com/in/karol-furmann-004182212/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+<a class="button" href="https://x.com/elparole" rel="noopener noreferrer" target="_blank">X / Twitter</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="wrap">
+<span>© Karol Furmann</span>
+<span>Game Developer — CosmoPirates + 32 browser/mobile games</span>
+</div>
+</footer>
+</body>
+</html>
