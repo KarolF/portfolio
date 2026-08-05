@@ -5,9 +5,9 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Karol Furmann — Game Developer</title>
-<meta content="Karol Furmann is a game developer and programmer/designer of CosmoPirates, with 32 browser and mobile games. His work includes ECS-based gameplay systems, deterministic simulations, Phaser UI, localization tooling, and portal-specific demo export pipelines." name="description"/>
+<meta content="I am Karol Furmann, a game developer and programmer/designer of CosmoPirates, with 32 browser and mobile games created together with BlackMoon Design. I was fully responsible for programming and contributed to game design." name="description"/>
 <meta content="Karol Furmann — Game Developer" property="og:title"/>
-<meta content="Programmer and designer of CosmoPirates. ECS gameplay systems, deterministic simulations, Phaser UI, localization tools, and 32 browser/mobile games." property="og:description"/>
+<meta content="I am a game developer, programmer, and designer of CosmoPirates and 32 browser/mobile games created together with BlackMoon Design." property="og:description"/>
 <meta content="website" property="og:type"/>
 <meta content="assets/cosmopirates/screenshot_01.jpg" property="og:image"/>
 <link href="assets/favicon.png" rel="icon"/>
@@ -258,6 +258,19 @@
     .case-list li { margin: 0 0 10px; }
     .case-list strong { color: var(--text); }
 
+
+
+    .collaboration-note {
+      margin: -8px 0 28px;
+      padding: 18px 20px;
+      border: 1px solid rgba(118,228,255,.24);
+      border-radius: var(--radius-sm);
+      background: rgba(118,228,255,.07);
+      color: #d8e2f2;
+      line-height: 1.65;
+    }
+    .collaboration-note strong { color: var(--text); }
+
     .screenshot-grid {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
@@ -371,7 +384,20 @@
       .feature-grid, .about-grid, .contact-card, .case-grid { grid-template-columns: 1fr; }
       .games-grid { grid-template-columns: repeat(3, 1fr); }
       .featured-work .games-grid { grid-template-columns: repeat(2, 1fr); }
-      .screenshot-grid { grid-template-columns: repeat(2, 1fr); }
+  
+
+    .collaboration-note {
+      margin: -8px 0 28px;
+      padding: 18px 20px;
+      border: 1px solid rgba(118,228,255,.24);
+      border-radius: var(--radius-sm);
+      background: rgba(118,228,255,.07);
+      color: #d8e2f2;
+      line-height: 1.65;
+    }
+    .collaboration-note strong { color: var(--text); }
+
+    .screenshot-grid { grid-template-columns: repeat(2, 1fr); }
       .section-head { display: block; }
       .section-head p { margin-top: 14px; }
     }
@@ -397,7 +423,20 @@
       .nav-links a:nth-child(3), .nav-links a:nth-child(4) { display: none; }
       .games-grid, .featured-work .games-grid { grid-template-columns: 1fr; }
       .button { width: 100%; }
-      .screenshot-grid { grid-template-columns: 1fr; }
+  
+
+    .collaboration-note {
+      margin: -8px 0 28px;
+      padding: 18px 20px;
+      border: 1px solid rgba(118,228,255,.24);
+      border-radius: var(--radius-sm);
+      background: rgba(118,228,255,.07);
+      color: #d8e2f2;
+      line-height: 1.65;
+    }
+    .collaboration-note strong { color: var(--text); }
+
+    .screenshot-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -419,7 +458,7 @@
 <div class="wrap hero-content">
 <div class="eyebrow"><span class="dot"></span> Game Developer</div>
 <h1>Karol Furmann</h1>
-<p class="hero-subtitle">Programmer and designer of <strong>CosmoPirates</strong>, plus 32 browser and mobile games built for fast, accessible play.</p>
+<p class="hero-subtitle">I am a game developer focused on programming and game design for <strong>CosmoPirates</strong> and 32 browser/mobile games created together with BlackMoon Design.</p>
 <div class="button-row">
 <a class="button primary" href="#cosmopirates">View Steam Game</a>
 <a class="button secondary" href="#games">Play Browser Games</a>
@@ -447,6 +486,7 @@
 <div class="fact"><span>Status</span><span>Released</span></div>
 <div class="fact"><span>Platform</span><span>Steam / PC</span></div>
 <div class="fact"><span>Tech</span><span>Phaser, TypeScript, ECS, Geotic, Electron, JSON tooling, Google Sheets scripting</span></div>
+<div class="fact"><span>Collaboration</span><span>Built together with BlackMoon Design. They created the graphics and co-designed the game. I was fully responsible for programming and contributed to game design.</span></div>
 </div>
 <div class="button-row">
 <a class="button primary" href="https://store.steampowered.com/app/2466240/CosmoPirates/?beta=1" rel="noopener noreferrer" target="_blank">Steam Page</a>
@@ -461,9 +501,9 @@
 <a href="assets/cosmopirates/screenshot_04.jpg" rel="noopener noreferrer" target="_blank"><img alt="CosmoPirates screenshot 4" loading="lazy" src="assets/cosmopirates/screenshot_04.jpg"/></a>
 <a href="assets/cosmopirates/screenshot_05.jpg" rel="noopener noreferrer" target="_blank"><img alt="CosmoPirates screenshot 5" loading="lazy" src="assets/cosmopirates/screenshot_05.jpg"/></a>
 </div>
-<article class="case-study" aria-label="CosmoPirates project description">
+<article aria-label="CosmoPirates project description" class="case-study">
 <h3>Project Breakdown</h3>
-<p>CosmoPirates was built as a full commercial PC game with additional browser demo builds released on portals such as CrazyGames, Newgrounds, and Armor Games. My work focused on gameplay architecture, technical systems, UI, content workflows, localization tooling, and portal-specific export automation.</p>
+<p>CosmoPirates was built together with BlackMoon Design as a full commercial PC game, with additional browser demo builds released on portals such as CrazyGames, Newgrounds, and Armor Games. BlackMoon Design created the graphics and co-designed the game. I was fully responsible for programming and contributed to game design, with my work focused on gameplay architecture, technical systems, UI, content workflows, localization tooling, and portal-specific export automation.</p>
 <div class="case-grid">
 <div class="case-block">
 <h4>Gameplay Architecture</h4>
@@ -507,8 +547,9 @@
 <div class="wrap">
 <div class="section-head">
 <h2>Selected Browser Games</h2>
-<p>Four highlighted browser/mobile projects from the larger game archive.</p>
+<p>Four highlighted browser/mobile projects from the larger game archive, covering action, physics puzzles, skill games, and pinball.</p>
 </div>
+<div class="collaboration-note"><strong>Collaboration note:</strong> These games were built together with BlackMoon Design, which created the graphics and co-designed them. I was fully responsible for the programming side and contributed to game design.</div>
 <div class="games-grid">
 <article class="game-card featured-card" data-genre="shooter / action">
 <a aria-label="Play Laser Adventures" href="https://games.blackmoondev.com/laseradventures" rel="noopener noreferrer" target="_blank">
@@ -516,7 +557,7 @@
 </a>
 <div>
 <h3>Laser Adventures</h3>
-<p class="tagline">Fast-paced mobile shooting game made in Construct 2. Players fight swarms of aliens, collect upgrades, and face boss encounters across browser, PC, Android, and iOS builds.</p>
+<p class="tagline">Fast-paced mobile shooting game built in Construct 2. Players fight swarms of aliens, collect upgrades, and face boss encounters across browser, PC, Android, and iOS builds.</p>
 <div class="meta-row"><span>Shooter / Action</span><span>Construct 2</span><span>Browser / PC / Android / iOS</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/laseradventures" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
@@ -527,8 +568,8 @@
 </a>
 <div>
 <h3>Basketball Master 2</h3>
-<p class="tagline">The second part of a physics-based basketball puzzle game built with Box2D. It features dozens of handcrafted levels with moving obstacles, teleporters, breakable objects, bumpers, and wind blowers, playable on browsers, PC, Android, and iOS.</p>
-<div class="meta-row"><span>Physics Puzzle</span><span>Box2D</span><span>Browser / PC / Android / iOS</span></div>
+<p class="tagline">The second entry in a physics-based basketball puzzle series, built in Construct 2 with Box2D. It features dozens of handcrafted levels with moving obstacles, teleporters, breakable objects, bumpers, and wind blowers for browser, PC, Android, and iOS.</p>
+<div class="meta-row"><span>Physics Puzzle</span><span>Construct 2 / Box2D</span><span>Browser / PC / Android / iOS</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/basketballmaster2" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -538,8 +579,8 @@
 </a>
 <div>
 <h3>Groovy Ski</h3>
-<p class="tagline">Fast-paced, humorous skill-action skiing game with multiple level generators and unlockable character skins. Designed for quick sessions on browsers, PC, Android, and iOS.</p>
-<div class="meta-row"><span>Skill Action</span><span>Level Generators</span><span>Browser / PC / Android / iOS</span></div>
+<p class="tagline">Fast-paced, humorous skill-action skiing game built in Construct 2, with multiple level generators and unlockable character skins for browser, PC, Android, and iOS.</p>
+<div class="meta-row"><span>Skill Action</span><span>Construct 2</span><span>Browser / PC / Android / iOS</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/groovyski" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -549,8 +590,8 @@
 </a>
 <div>
 <h3>Zoo Pinball</h3>
-<p class="tagline">Physics-based flipper pinball game with quest objectives and a playful zoo setting. Built around Box2D physics to simulate real pinball behavior across browser, PC, Android, and iOS.</p>
-<div class="meta-row"><span>Pinball / Arcade</span><span>Box2D</span><span>Browser / PC / Android / iOS</span></div>
+<p class="tagline">Physics-based flipper pinball game built in Construct 2 with Box2D. It includes quest objectives, a playful zoo setting, and systems designed to simulate real pinball behavior across browser, PC, Android, and iOS.</p>
+<div class="meta-row"><span>Pinball / Arcade</span><span>Construct 2 / Box2D</span><span>Browser / PC / Android / iOS</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/zoopinball" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -561,8 +602,9 @@
 <div class="wrap">
 <div class="section-head">
 <h2>32 Browser &amp; Mobile Games</h2>
-<p>Playable web games covering arcade, puzzle, sports, cooking, hidden-object, action, and casual formats.</p>
+<p>Playable web games covering Phaser, Three.js, Construct 2, Spine animation, arcade, puzzle, sports, action, and casual formats.</p>
 </div>
+<div class="collaboration-note"><strong>Production note:</strong> The browser/mobile catalog was created together with BlackMoon Design. They handled graphics and co-design; I owned programming and contributed to game design.</div>
 <div class="games-grid">
 <article class="game-card" data-genre="word / puzzle">
 <a aria-label="Play Word To Find" href="https://games.blackmoondev.com/word_to_find/" rel="noopener noreferrer" target="_blank">
@@ -570,8 +612,8 @@
 </a>
 <div>
 <h3>Word To Find</h3>
-<p class="tagline">Browser/mobile game built for short-session play.</p>
-<div class="meta-row"><span>Word / Puzzle</span><span>Browser / Mobile</span></div>
+<p class="tagline">Word-search puzzle game built in Phaser and also published on Roblox.</p>
+<div class="meta-row"><span>Word / Puzzle</span><span>Phaser</span><span>Roblox / Browser</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/word_to_find/" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -581,8 +623,8 @@
 </a>
 <div>
 <h3>Farmer's Market</h3>
-<p class="tagline">Browser/mobile game built for short-session play.</p>
-<div class="meta-row"><span>Puzzle / Casual</span><span>Browser / Mobile</span></div>
+<p class="tagline">Casual Phaser game built for short-session browser and mobile play.</p>
+<div class="meta-row"><span>Puzzle / Casual</span><span>Phaser</span><span>Browser / Mobile</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/farmersmarket/" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -592,8 +634,8 @@
 </a>
 <div>
 <h3>Offroad Madness</h3>
-<p class="tagline">Browser/mobile game built for short-session play.</p>
-<div class="meta-row"><span>Racing / Arcade</span><span>Browser / Mobile</span></div>
+<p class="tagline">3D off-road arcade game built with Three.js for browser play.</p>
+<div class="meta-row"><span>Racing / Arcade</span><span>Three.js</span><span>3D Browser Game</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/offroadmadness/" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -603,8 +645,8 @@
 </a>
 <div>
 <h3>Bridge of Doom</h3>
-<p class="tagline">Browser/mobile game built for short-session play.</p>
-<div class="meta-row"><span>Arcade / Action</span><span>Browser / Mobile</span></div>
+<p class="tagline">Phaser action game using Spine skeletal animations for character and enemy motion.</p>
+<div class="meta-row"><span>Arcade / Action</span><span>Phaser</span><span>Spine</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/bridgeofdoom" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -614,7 +656,7 @@
 </a>
 <div>
 <h3>Laser Adventures</h3>
-<p class="tagline">Fast-paced mobile shooting game made in Construct 2. Players fight swarms of aliens, collect upgrades, and face boss encounters across browser, PC, Android, and iOS builds.</p>
+<p class="tagline">Fast-paced mobile shooting game built in Construct 2. Players fight swarms of aliens, collect upgrades, and face boss encounters across browser, PC, Android, and iOS builds.</p>
 <div class="meta-row"><span>Shooter / Action</span><span>Construct 2</span><span>Browser / PC / Android / iOS</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/laseradventures" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
@@ -625,8 +667,8 @@
 </a>
 <div>
 <h3>Riddle Cubes</h3>
-<p class="tagline">Browser/mobile game built for short-session play.</p>
-<div class="meta-row"><span>Puzzle</span><span>Browser / Mobile</span></div>
+<p class="tagline">Puzzle game designed for local two-player play, focused on shared-screen problem solving and competitive puzzle interactions.</p>
+<div class="meta-row"><span>Puzzle</span><span>Local 2 Players</span><span>Browser / Mobile</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/riddlecubes" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -636,8 +678,8 @@
 </a>
 <div>
 <h3>Twinz</h3>
-<p class="tagline">Browser/mobile game built for short-session play.</p>
-<div class="meta-row"><span>Puzzle / Matching</span><span>Browser / Mobile</span></div>
+<p class="tagline">Two-player puzzle game designed for local play, with quick rounds and accessible shared-device gameplay.</p>
+<div class="meta-row"><span>Puzzle / Matching</span><span>Local 2 Players</span><span>Browser / Mobile</span></div>
 <a class="text-link" href="https://blackmoondev.com/twinz" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -647,8 +689,8 @@
 </a>
 <div>
 <h3>Basketball Master 2</h3>
-<p class="tagline">The second part of a physics-based basketball puzzle game built with Box2D. It features dozens of handcrafted levels with moving obstacles, teleporters, breakable objects, bumpers, and wind blowers, playable on browsers, PC, Android, and iOS.</p>
-<div class="meta-row"><span>Physics Puzzle</span><span>Box2D</span><span>Browser / PC / Android / iOS</span></div>
+<p class="tagline">The second entry in a physics-based basketball puzzle series, built in Construct 2 with Box2D. It features dozens of handcrafted levels with moving obstacles, teleporters, breakable objects, bumpers, and wind blowers for browser, PC, Android, and iOS.</p>
+<div class="meta-row"><span>Physics Puzzle</span><span>Construct 2 / Box2D</span><span>Browser / PC / Android / iOS</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/basketballmaster2" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -658,8 +700,8 @@
 </a>
 <div>
 <h3>Groovy Ski</h3>
-<p class="tagline">Fast-paced, humorous skill-action skiing game with multiple level generators and unlockable character skins. Designed for quick sessions on browsers, PC, Android, and iOS.</p>
-<div class="meta-row"><span>Skill Action</span><span>Level Generators</span><span>Browser / PC / Android / iOS</span></div>
+<p class="tagline">Fast-paced, humorous skill-action skiing game built in Construct 2, with multiple level generators and unlockable character skins for browser, PC, Android, and iOS.</p>
+<div class="meta-row"><span>Skill Action</span><span>Construct 2</span><span>Browser / PC / Android / iOS</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/groovyski" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -669,19 +711,19 @@
 </a>
 <div>
 <h3>Veggi Rabbit</h3>
-<p class="tagline">Browser/mobile game built for short-session play.</p>
-<div class="meta-row"><span>Arcade / Casual</span><span>Browser / Mobile</span></div>
+<p class="tagline">Construct 2 arcade / casual game built for short-session browser and mobile play.</p>
+<div class="meta-row"><span>Arcade / Casual</span><span>Construct 2</span><span>Browser / Mobile</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/veggirabbit" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
-</article><article class="game-card" data-genre="arcade / casual"><a aria-label="Play Doonies" href="https://games.blackmoondev.com/doonies/" rel="noopener noreferrer" target="_blank"><img alt="Doonies icon" height="256" loading="lazy" src="assets/games/doonies.png" width="256"/></a><div><h3>Doonies</h3><p class="tagline">Browser/mobile game built for short-session play.</p><div class="meta-row"><span>Arcade / Casual</span><span>Browser / Mobile</span></div><a class="text-link" href="https://games.blackmoondev.com/doonies/" rel="noopener noreferrer" target="_blank">Play game</a></div></article>
+</article><article class="game-card" data-genre="arcade / casual"><a aria-label="Play Doonies" href="https://games.blackmoondev.com/doonies/" rel="noopener noreferrer" target="_blank"><img alt="Doonies icon" height="256" loading="lazy" src="assets/games/doonies.png" width="256"/></a><div><h3>Doonies</h3><p class="tagline">Phaser game built for short-session browser and mobile play.</p><div class="meta-row"><span>Arcade / Casual</span><span>Phaser</span><span>Browser / Mobile</span></div><a class="text-link" href="https://games.blackmoondev.com/doonies/" rel="noopener noreferrer" target="_blank">Play game</a></div></article>
 <article class="game-card" data-genre="action / arcade">
 <a aria-label="Play Alien Attack" href="https://games.blackmoondev.com/alienattack" rel="noopener noreferrer" target="_blank">
 <img alt="Alien Attack icon" height="256" loading="lazy" src="assets/games/alienattack.png" width="256"/>
 </a>
 <div>
 <h3>Alien Attack</h3>
-<p class="tagline">Browser/mobile game built for short-session play.</p>
-<div class="meta-row"><span>Action / Arcade</span><span>Browser / Mobile</span></div>
+<p class="tagline">Construct 2 action / arcade game built for short-session browser and mobile play.</p>
+<div class="meta-row"><span>Action / Arcade</span><span>Construct 2</span><span>Browser / Mobile</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/alienattack" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -691,8 +733,8 @@
 </a>
 <div>
 <h3>Robotion</h3>
-<p class="tagline">Browser/mobile game built for short-session play.</p>
-<div class="meta-row"><span>Puzzle / Logic</span><span>Browser / Mobile</span></div>
+<p class="tagline">Construct 2 puzzle / logic game built for short-session browser and mobile play.</p>
+<div class="meta-row"><span>Puzzle / Logic</span><span>Construct 2</span><span>Browser / Mobile</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/robotion" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -702,8 +744,8 @@
 </a>
 <div>
 <h3>Zoo Pinball</h3>
-<p class="tagline">Physics-based flipper pinball game with quest objectives and a playful zoo setting. Built around Box2D physics to simulate real pinball behavior across browser, PC, Android, and iOS.</p>
-<div class="meta-row"><span>Pinball / Arcade</span><span>Box2D</span><span>Browser / PC / Android / iOS</span></div>
+<p class="tagline">Physics-based flipper pinball game built in Construct 2 with Box2D. It includes quest objectives, a playful zoo setting, and systems designed to simulate real pinball behavior across browser, PC, Android, and iOS.</p>
+<div class="meta-row"><span>Pinball / Arcade</span><span>Construct 2 / Box2D</span><span>Browser / PC / Android / iOS</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/zoopinball" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -713,8 +755,8 @@
 </a>
 <div>
 <h3>Where's Tom</h3>
-<p class="tagline">Browser/mobile game built for short-session play.</p>
-<div class="meta-row"><span>Hidden Object</span><span>Browser / Mobile</span></div>
+<p class="tagline">Construct 2 hidden object game built for short-session browser and mobile play.</p>
+<div class="meta-row"><span>Hidden Object</span><span>Construct 2</span><span>Browser / Mobile</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/wherestom" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -724,8 +766,8 @@
 </a>
 <div>
 <h3>Basketball Master</h3>
-<p class="tagline">Browser/mobile game built for short-session play.</p>
-<div class="meta-row"><span>Sports / Arcade</span><span>Browser / Mobile</span></div>
+<p class="tagline">Construct 2 sports / arcade game built for short-session browser and mobile play.</p>
+<div class="meta-row"><span>Sports / Arcade</span><span>Construct 2</span><span>Browser / Mobile</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/basketball" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -735,8 +777,8 @@
 </a>
 <div>
 <h3>Pigeon Bomber</h3>
-<p class="tagline">Browser/mobile game built for short-session play.</p>
-<div class="meta-row"><span>Arcade / Action</span><span>Browser / Mobile</span></div>
+<p class="tagline">Construct 2 arcade / action game built for short-session browser and mobile play.</p>
+<div class="meta-row"><span>Arcade / Action</span><span>Construct 2</span><span>Browser / Mobile</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/pigeon" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -746,8 +788,8 @@
 </a>
 <div>
 <h3>Little Bouncing Guys</h3>
-<p class="tagline">Browser/mobile game built for short-session play.</p>
-<div class="meta-row"><span>Arcade / Platform</span><span>Browser / Mobile</span></div>
+<p class="tagline">Construct 2 arcade / platform game built for short-session browser and mobile play.</p>
+<div class="meta-row"><span>Arcade / Platform</span><span>Construct 2</span><span>Browser / Mobile</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/lbg" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -757,8 +799,8 @@
 </a>
 <div>
 <h3>Pie Attack</h3>
-<p class="tagline">Browser/mobile game built for short-session play.</p>
-<div class="meta-row"><span>Arcade / Action</span><span>Browser / Mobile</span></div>
+<p class="tagline">Construct 2 arcade / action game built for short-session browser and mobile play.</p>
+<div class="meta-row"><span>Arcade / Action</span><span>Construct 2</span><span>Browser / Mobile</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/pieattack" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -768,8 +810,8 @@
 </a>
 <div>
 <h3>Rafting Adventure</h3>
-<p class="tagline">Browser/mobile game built for short-session play.</p>
-<div class="meta-row"><span>Arcade / Sports</span><span>Browser / Mobile</span></div>
+<p class="tagline">Construct 2 arcade / sports game built for short-session browser and mobile play.</p>
+<div class="meta-row"><span>Arcade / Sports</span><span>Construct 2</span><span>Browser / Mobile</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/rafting" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -779,8 +821,8 @@
 </a>
 <div>
 <h3>Flying School</h3>
-<p class="tagline">Browser/mobile game built for short-session play.</p>
-<div class="meta-row"><span>Arcade / Skill</span><span>Browser / Mobile</span></div>
+<p class="tagline">Construct 2 arcade / skill game built for short-session browser and mobile play.</p>
+<div class="meta-row"><span>Arcade / Skill</span><span>Construct 2</span><span>Browser / Mobile</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/flyingschool" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -790,8 +832,8 @@
 </a>
 <div>
 <h3>Looney Roonks</h3>
-<p class="tagline">Browser/mobile game built for short-session play.</p>
-<div class="meta-row"><span>Puzzle / Arcade</span><span>Browser / Mobile</span></div>
+<p class="tagline">Construct 2 puzzle / arcade game built for short-session browser and mobile play.</p>
+<div class="meta-row"><span>Puzzle / Arcade</span><span>Construct 2</span><span>Browser / Mobile</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/looneyroonks" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -801,8 +843,8 @@
 </a>
 <div>
 <h3>Rectangzings</h3>
-<p class="tagline">Browser/mobile game built for short-session play.</p>
-<div class="meta-row"><span>Puzzle / Logic</span><span>Browser / Mobile</span></div>
+<p class="tagline">Construct 2 puzzle / logic game built for short-session browser and mobile play.</p>
+<div class="meta-row"><span>Puzzle / Logic</span><span>Construct 2</span><span>Browser / Mobile</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/rectangzings" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -812,8 +854,8 @@
 </a>
 <div>
 <h3>Jellyland</h3>
-<p class="tagline">Browser/mobile game built for short-session play.</p>
-<div class="meta-row"><span>Puzzle / Casual</span><span>Browser / Mobile</span></div>
+<p class="tagline">Construct 2 puzzle / casual game built for short-session browser and mobile play.</p>
+<div class="meta-row"><span>Puzzle / Casual</span><span>Construct 2</span><span>Browser / Mobile</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/jellyland" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -823,8 +865,8 @@
 </a>
 <div>
 <h3>Swipe Art Puzzle</h3>
-<p class="tagline">Browser/mobile game built for short-session play.</p>
-<div class="meta-row"><span>Puzzle</span><span>Browser / Mobile</span></div>
+<p class="tagline">Construct 2 puzzle game built for short-session browser and mobile play.</p>
+<div class="meta-row"><span>Puzzle</span><span>Construct 2</span><span>Browser / Mobile</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/swipeart" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -834,8 +876,8 @@
 </a>
 <div>
 <h3>Mini Golf</h3>
-<p class="tagline">Browser/mobile game built for short-session play.</p>
-<div class="meta-row"><span>Sports / Casual</span><span>Browser / Mobile</span></div>
+<p class="tagline">Construct 2 sports / casual game built for short-session browser and mobile play.</p>
+<div class="meta-row"><span>Sports / Casual</span><span>Construct 2</span><span>Browser / Mobile</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/minigolf" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -845,8 +887,8 @@
 </a>
 <div>
 <h3>Greedy Gnomes</h3>
-<p class="tagline">Browser/mobile game built for short-session play.</p>
-<div class="meta-row"><span>Puzzle / Arcade</span><span>Browser / Mobile</span></div>
+<p class="tagline">Construct 2 puzzle / arcade game built for short-session browser and mobile play.</p>
+<div class="meta-row"><span>Puzzle / Arcade</span><span>Construct 2</span><span>Browser / Mobile</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/greedygnomes" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -856,8 +898,8 @@
 </a>
 <div>
 <h3>Evil Wyrm</h3>
-<p class="tagline">Browser/mobile game built for short-session play.</p>
-<div class="meta-row"><span>Action / Arcade</span><span>Browser / Mobile</span></div>
+<p class="tagline">Construct 2 action / arcade game built for short-session browser and mobile play.</p>
+<div class="meta-row"><span>Action / Arcade</span><span>Construct 2</span><span>Browser / Mobile</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/wyrm" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -867,8 +909,8 @@
 </a>
 <div>
 <h3>Craig of the Creek: Scout of the Other Side</h3>
-<p class="tagline">Browser/mobile game built for short-session play.</p>
-<div class="meta-row"><span>Adventure / Arcade</span><span>Browser / Mobile</span></div>
+<p class="tagline">Construct 2 adventure / arcade game built for short-session browser and mobile play.</p>
+<div class="meta-row"><span>Adventure / Arcade</span><span>Construct 2</span><span>Browser / Mobile</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/craigensot" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -878,8 +920,8 @@
 </a>
 <div>
 <h3>Yummy Taco</h3>
-<p class="tagline">Browser/mobile game built for short-session play.</p>
-<div class="meta-row"><span>Cooking / Casual</span><span>Browser / Mobile</span></div>
+<p class="tagline">Construct 2 cooking / casual game built for short-session browser and mobile play.</p>
+<div class="meta-row"><span>Cooking / Casual</span><span>Construct 2</span><span>Browser / Mobile</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/taco" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -889,8 +931,8 @@
 </a>
 <div>
 <h3>Jom Jom Jump</h3>
-<p class="tagline">Browser/mobile game built for short-session play.</p>
-<div class="meta-row"><span>Arcade / Skill</span><span>Browser / Mobile</span></div>
+<p class="tagline">Construct 2 arcade / skill game built for short-session browser and mobile play.</p>
+<div class="meta-row"><span>Arcade / Skill</span><span>Construct 2</span><span>Browser / Mobile</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/jomjom" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -900,8 +942,8 @@
 </a>
 <div>
 <h3>Crazy Pizza</h3>
-<p class="tagline">Browser/mobile game built for short-session play.</p>
-<div class="meta-row"><span>Cooking / Casual</span><span>Browser / Mobile</span></div>
+<p class="tagline">Construct 2 cooking / casual game built for short-session browser and mobile play.</p>
+<div class="meta-row"><span>Cooking / Casual</span><span>Construct 2</span><span>Browser / Mobile</span></div>
 <a class="text-link" href="https://games.blackmoondev.com/pizza" rel="noopener noreferrer" target="_blank">Play game</a>
 </div>
 </article>
@@ -917,18 +959,10 @@
 </div>
 <div class="panel about-text">
 <h2>About</h2>
-<p>Karol Furmann is a game developer focused on commercial PC games and browser/mobile games. He worked as programmer and designer on CosmoPirates and has built a catalog of 32 short-session web and mobile games.</p>
-<p>Core tools and technologies include Phaser, TypeScript, ECS architecture, Geotic, Electron, JSON-based content pipelines, localization tooling, and browser portal export automation.</p>
-<div aria-label="Skills" class="skills">
-<span class="pill">Gameplay Programming</span>
-<span class="pill">Game Design</span>
-<span class="pill">Phaser</span>
-<span class="pill">TypeScript</span>
-<span class="pill">ECS</span>
-<span class="pill">Electron</span>
-<span class="pill">Browser Games</span>
-<span class="pill">Mobile Web</span>
-</div>
+<p>I am a game developer focused on commercial PC games and browser/mobile games. I worked as programmer and designer on CosmoPirates, and I have built a catalog of 32 short-session web and mobile games.</p>
+<p>All games shown here were built together with BlackMoon Design, which created the graphics and co-designed the projects. I was fully responsible for the programming part and contributed to game design.</p>
+<p>I earned a Master of Science in Engineering degree in Electronics and Telecommunications from Poznań University of Technology.</p><p>Core tools and technologies include Phaser, TypeScript, ECS architecture, Geotic, Electron, Three.js, Construct 2, Spine, JSON-based content pipelines, localization tooling, and browser portal export automation.</p>
+<div aria-label="Skills" class="skills"><span class="pill">Gameplay Programming</span><span class="pill">Game Design</span><span class="pill">Phaser</span><span class="pill">TypeScript</span><span class="pill">ECS</span><span class="pill">Three.js</span><span class="pill">Construct 2</span><span class="pill">Spine</span><span class="pill">Electron</span><span class="pill">Browser Games</span><span class="pill">Mobile Web</span></div>
 </div>
 </div>
 </div>
@@ -952,7 +986,7 @@
 <footer class="footer">
 <div class="wrap">
 <span>© Karol Furmann</span>
-<span>Game Developer — CosmoPirates + 32 browser/mobile games</span>
+<span>Game Developer — CosmoPirates + 32 browser/mobile games with BlackMoon Design</span>
 </div>
 </footer>
 </body>
