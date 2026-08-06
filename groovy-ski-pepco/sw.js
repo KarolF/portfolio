@@ -85,14 +85,14 @@ function ReadLazyLoadListFromStorage()
 function GetCacheBaseName()
 {
 	// Include the scope to avoid name collisions with any other SWs on the same origin.
-	// e.g. "c2offline-https://example.com/foo/" (won't collide with anything under bar/)
+	// The registration scope is included so caches from different paths cannot collide.
 	return CACHE_NAME_PREFIX + "-" + self.registration.scope;
 };
 
 function GetCacheVersionName(version)
 {
 	// Append the version number to the cache name.
-	// e.g. "c2offline-https://example.com/foo/-v2"
+	// The version suffix isolates each offline bundle revision.
 	return GetCacheBaseName() + "-v" + version;
 };
 
@@ -125,7 +125,7 @@ async function GetMainPageUrl()
 	
 	for (const c of allClients)
 	{
-		// Parse off the scope from the full client URL, e.g. https://example.com/index.html -> index.html
+		// Parse the registration scope from the full client URL to obtain the local page path.
 		let url = c.url;
 		if (url.startsWith(self.registration.scope))
 			url = url.substring(self.registration.scope.length);
@@ -133,7 +133,7 @@ async function GetMainPageUrl()
 		if (url && url !== "/")		// ./ is also implicitly cached so don't bother returning that
 		{
 			// If the URL is solely a search string, prefix it with / to ensure it caches correctly.
-			// e.g. https://example.com/?foo=bar needs to cache as /?foo=bar, not just ?foo=bar.
+			// A search-only URL must be cached with a leading slash.
 			if (url.startsWith("?"))
 				url = "/" + url;
 			
@@ -383,7 +383,10 @@ self.addEventListener("fetch", event =>
 	 *  occur instead. Currently all cross-origin requests fall back to default.
 	 */
 	if (new URL(event.request.url).origin !== location.origin)
+	{
+		event.respondWith(Promise.resolve(Response.error()));
 		return;
+	}
 		
 	// Check for an update on navigate requests
 	const doUpdateCheck = (event.request.mode === "navigate");

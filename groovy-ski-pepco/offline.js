@@ -1,5 +1,5 @@
-﻿{
-	"version": 1600941424,
+{
+	"version": 2026080601,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -133,7 +133,7 @@
 		"icon-128.png",
 		"icon-256.png",
 		"loading-logo.png",
-		"firebase.js",
+		"local-leaderboard.js",
 		"lz-string.min.js"
 	]
 }
