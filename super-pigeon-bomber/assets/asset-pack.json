@@ -1,0 +1,316 @@
+{
+    "section1": {
+        "files": [
+            { "type": "image", "key": "Chest_Closed", "url": "ui/Chest_Closed.png" },
+            { "type": "image", "key": "Chest_Open", "url": "ui/Chest_Open.png" },
+            { "type": "image", "key": "Btn_Info", "url": "ui/Btn_Info.png" },
+            { "type": "image", "key": "Btn_Yes", "url": "ui/Btn_Yes.png" },
+            { "type": "image", "key": "Btn_No", "url": "ui/Btn_No.png" },
+            { "type": "image", "key": "DirectionArrow", "url": "ui/DirectionArrow.png" },
+            { "type": "image", "key": "Icon_KillsV2", "url": "ui/Icon_KillsV2.png" },
+            {
+                "type": "image",
+                "key": "Btn_Custom",
+                "url": "ui/Btn_Custom.png"
+            },
+            {
+                "type": "image",
+                "key": "Btn_CustomActionForAd",
+                "url": "ui/Btn_CustomActionForAd.png"
+            },
+            {
+                "type": "multiatlas",
+                "key": "game-atlas",
+                "url": "atlas/textures.json",
+                "path": "assets/atlas/"
+            },
+            {
+                "type": "json",
+                "key": "collision-shapes",
+                "url": "collision-shapes.json"
+            },
+            {
+                "type": "audio",
+                "key": "MSC_SuperPigeon",
+                "url": [
+                    "sounds/MSC_SuperPigeon.ogg",
+                    "sounds/MSC_SuperPigeon.m4a"
+                ]
+            },
+            {
+                "type": "audio",
+                "key": "MSC_LevelCleared",
+                "url": [
+                    "sounds/MSC_LevelCleared.ogg",
+                    "sounds/MSC_LevelCleared.m4a"
+                ]
+            },
+            {
+                "type": "audio",
+                "key": "MSC_SuperPigeon_BossFight",
+                "url": [
+                    "sounds/MSC_SuperPigeon_BossFight.ogg",
+                    "sounds/MSC_SuperPigeon_BossFight.m4a"
+                ]
+            },
+            {
+                "type": "audio",
+                "key": "bird sound_02",
+                "url": [
+                    "sounds/bird sound_02.ogg",
+                    "sounds/bird sound_02.m4a"
+                ]
+            },
+            {
+                "type": "audio",
+                "key": "eagle",
+                "url": [
+                    "sounds/eagle.ogg",
+                    "sounds/eagle.m4a"
+                ]
+            },
+            {
+                "type": "audio",
+                "key": "hit",
+                "url": [
+                    "sounds/hit.ogg",
+                    "sounds/hit.m4a"
+                ]
+            },
+            {
+                "type": "audio",
+                "key": "machinegun_normalciszej",
+                "url": [
+                    "sounds/machinegun_normalciszej.ogg",
+                    "sounds/machinegun_normalciszej.m4a"
+                ]
+            },
+            {
+                "type": "audio",
+                "key": "machinegun_normal_superbassciszej",
+                "url": [
+                    "sounds/machinegun_normal_superbassciszej.ogg",
+                    "sounds/machinegun_normal_superbassciszej.m4a"
+                ]
+            },
+            {
+                "type": "audio",
+                "key": "alien hit by bullet",
+                "url": [
+                    "sounds/alien hit by bullet.ogg",
+                    "sounds/alien hit by bullet.m4a"
+                ]
+            },
+            {
+                "type": "audio",
+                "key": "explosion_02",
+                "url": [
+                    "sounds/explosion_02.ogg",
+                    "sounds/explosion_02.m4a"
+                ]
+            },
+            {
+                "type": "audio",
+                "key": "Car_Start",
+                "url": [
+                    "sounds/Car_Start.ogg",
+                    "sounds/Car_Start.m4a"
+                ]
+            },
+            {
+                "type": "audio",
+                "key": "ufo",
+                "url": [
+                    "sounds/ufo.ogg",
+                    "sounds/ufo.m4a"
+                ]
+            },
+            {
+                "type": "audio",
+                "key": "direction swoosh 01",
+                "url": [
+                    "sounds/direction swoosh 01.ogg",
+                    "sounds/direction swoosh 01.m4a"
+                ]
+            },
+            {
+                "type": "audio",
+                "key": "direction swoosh 02",
+                "url": [
+                    "sounds/direction swoosh 02.ogg",
+                    "sounds/direction swoosh 02.m4a"
+                ]
+            },
+            {
+                "type": "audio",
+                "key": "complete_01",
+                "url": [
+                    "sounds/complete_01.ogg",
+                    "sounds/complete_01.m4a"
+                ]
+            },
+            {
+                "type": "audio",
+                "key": "upgrade_shotgun",
+                "url": [
+                    "sounds/upgrade_shotgun.ogg",
+                    "sounds/upgrade_shotgun.m4a"
+                ]
+            },
+            {
+                "type": "audio",
+                "key": "cartoon tap_02",
+                "url": [
+                    "sounds/cartoon tap_02.ogg",
+                    "sounds/cartoon tap_02.m4a"
+                ]
+            },
+            {
+                "type": "audio",
+                "key": "miss",
+                "url": [
+                    "sounds/miss.ogg",
+                    "sounds/miss.m4a"
+                ]
+            },
+            {
+                "type": "audio",
+                "key": "pigeon_crash",
+                "url": [
+                    "sounds/pigeon_crash.ogg",
+                    "sounds/pigeon_crash.m4a"
+                ]
+            },
+            {
+                "type": "audio",
+                "key": "pigeon_eating",
+                "url": [
+                    "sounds/pigeon_eating.ogg",
+                    "sounds/pigeon_eating.m4a"
+                ]
+            },
+            {
+                "type": "audio",
+                "key": "shotgun01",
+                "url": [
+                    "sounds/1307/shotgun01.ogg",
+                    "sounds/1307/shotgun01.m4a"
+                ]
+            },
+            {
+                "type": "audio",
+                "key": "shotgun01a",
+                "url": [
+                    "sounds/1307/shotgun01a.ogg",
+                    "sounds/1307/shotgun01a.m4a"
+                ]
+            },
+            {
+                "type": "audio",
+                "key": "shotgun01b",
+                "url": [
+                    "sounds/1307/shotgun01b.ogg",
+                    "sounds/1307/shotgun01b.m4a"
+                ]
+            },
+            {
+                "type": "audio",
+                "key": "snd_burp_01",
+                "url": ["snd/Snd_Burp_01.ogg", "snd/Snd_Burp_01.m4a"]
+            },
+            {
+                "type": "audio",
+                "key": "snd_burp_02",
+                "url": ["snd/Snd_Burp_02.ogg", "snd/Snd_Burp_02.m4a"]
+            },
+            {
+                "type": "audio",
+                "key": "snd_burp_03",
+                "url": ["snd/Snd_Burp_03.ogg", "snd/Snd_Burp_03.m4a"]
+            },
+            {
+                "type": "audio",
+                "key": "snd_fart_01",
+                "url": ["snd/Snd_Fart_01.ogg", "snd/Snd_Fart_01.m4a"]
+            },
+            {
+                "type": "audio",
+                "key": "snd_fart_02",
+                "url": ["snd/Snd_Fart_02.ogg", "snd/Snd_Fart_02.m4a"]
+            },
+            {
+                "type": "audio",
+                "key": "snd_fart_03",
+                "url": ["snd/Snd_Fart_03.ogg", "snd/Snd_Fart_03.m4a"]
+            },
+            {
+                "type": "audio",
+                "key": "snd_fart_04",
+                "url": ["snd/Snd_Fart_04.ogg", "snd/Snd_Fart_04.m4a"]
+            },
+            {
+                "type": "audio",
+                "key": "snd_fart_05",
+                "url": ["snd/Snd_Fart_05.ogg", "snd/Snd_Fart_05.m4a"]
+            },
+            {
+                "type": "audio",
+                "key": "snd_hit_01",
+                "url": ["snd/Snd_Hit_01.ogg", "snd/Snd_Hit_01.m4a"]
+            },
+            {
+                "type": "audio",
+                "key": "snd_hit_02",
+                "url": ["snd/Snd_Hit_02.ogg", "snd/Snd_Hit_02.m4a"]
+            },
+            {
+                "type": "audio",
+                "key": "snd_hit_03",
+                "url": ["snd/Snd_Hit_03.ogg", "snd/Snd_Hit_03.m4a"]
+            },
+            {
+                "type": "audio",
+                "key": "snd_hit_04",
+                "url": ["snd/Snd_Hit_04.ogg", "snd/Snd_Hit_04.m4a"]
+            },
+            {
+                "type": "audio",
+                "key": "snd_hit_05",
+                "url": ["snd/Snd_Hit_05.ogg", "snd/Snd_Hit_05.m4a"]
+            },
+            {
+                "type": "audio",
+                "key": "snd_shoot_01",
+                "url": ["snd/Snd_Shoot_01.ogg", "snd/Snd_Shoot_01.m4a"]
+            },
+            {
+                "type": "audio",
+                "key": "snd_shoot_02",
+                "url": ["snd/Snd_Shoot_02.ogg", "snd/Snd_Shoot_02.m4a"]
+            },
+            {
+                "type": "audio",
+                "key": "snd_shoot_03",
+                "url": ["snd/Snd_Shoot_03.ogg", "snd/Snd_Shoot_03.m4a"]
+            },
+            {
+                "type": "audio",
+                "key": "snd_shoot_04",
+                "url": ["snd/Snd_Shoot_04.ogg", "snd/Snd_Shoot_04.m4a"]
+            },
+            {
+                "type": "audio",
+                "key": "snd_shoot_05",
+                "url": ["snd/Snd_Shoot_05.ogg", "snd/Snd_Shoot_05.m4a"]
+            },
+            {
+                "type": "audio",
+                "key": "snd_shoot_06",
+                "url": ["snd/Snd_Shoot_06.ogg", "snd/Snd_Shoot_06.m4a"]
+            }
+        ]
+    },
+    "meta": {
+        "version": 2
+    }
+}
