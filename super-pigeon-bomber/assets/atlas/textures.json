@@ -1,0 +1,4458 @@
+{
+  "textures": [
+    {
+      "image": "texture-0.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2048,
+        "h": 2048
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "splash_fountain_impact",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 1280,
+            "h": 1024
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 1280,
+            "h": 1024
+          },
+          "frame": {
+            "x": 6,
+            "y": 6,
+            "w": 1280,
+            "h": 1024
+          }
+        },
+        {
+          "filename": "hit_effect",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 540,
+            "h": 960
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 540,
+            "h": 960
+          },
+          "frame": {
+            "x": 6,
+            "y": 1042,
+            "w": 540,
+            "h": 960
+          }
+        },
+        {
+          "filename": "Projectile_Bullet",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 52,
+            "h": 28
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 52,
+            "h": 28
+          },
+          "frame": {
+            "x": 6,
+            "y": 2014,
+            "w": 52,
+            "h": 28
+          }
+        },
+        {
+          "filename": "poop_mark",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 28,
+            "h": 28
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 28,
+            "h": 28
+          },
+          "frame": {
+            "x": 70,
+            "y": 2014,
+            "w": 28,
+            "h": 28
+          }
+        },
+        {
+          "filename": "BombReadyIcon",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 26,
+            "h": 28
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 26,
+            "h": 28
+          },
+          "frame": {
+            "x": 110,
+            "y": 2014,
+            "w": 26,
+            "h": 28
+          }
+        },
+        {
+          "filename": "Sticker_Sign_arrow",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 29,
+            "h": 21
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 29,
+            "h": 21
+          },
+          "frame": {
+            "x": 148,
+            "y": 2014,
+            "w": 29,
+            "h": 21
+          }
+        },
+        {
+          "filename": "LevelBarSegment",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 8,
+            "h": 19
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 8,
+            "h": 19
+          },
+          "frame": {
+            "x": 189,
+            "y": 2014,
+            "w": 8,
+            "h": 19
+          }
+        },
+        {
+          "filename": "Bullet",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 18,
+            "h": 18
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 18,
+            "h": 18
+          },
+          "frame": {
+            "x": 209,
+            "y": 2014,
+            "w": 18,
+            "h": 18
+          }
+        },
+        {
+          "filename": "pixel",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 2,
+            "h": 2
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 2,
+            "h": 2
+          },
+          "frame": {
+            "x": 239,
+            "y": 2014,
+            "w": 2,
+            "h": 2
+          }
+        },
+        {
+          "filename": "BG_Blue",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 640,
+            "h": 1050
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 640,
+            "h": 1050
+          },
+          "frame": {
+            "x": 1298,
+            "y": 6,
+            "w": 640,
+            "h": 1050
+          }
+        },
+        {
+          "filename": "Tree_01",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 92,
+            "h": 121
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 92,
+            "h": 121
+          },
+          "frame": {
+            "x": 1950,
+            "y": 1042,
+            "w": 92,
+            "h": 121
+          }
+        },
+        {
+          "filename": "Sticker_Screen",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 91,
+            "h": 70
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 91,
+            "h": 70
+          },
+          "frame": {
+            "x": 1950,
+            "y": 1175,
+            "w": 91,
+            "h": 70
+          }
+        },
+        {
+          "filename": "Icon_BombCooldown",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 90,
+            "h": 89
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 90,
+            "h": 89
+          },
+          "frame": {
+            "x": 1950,
+            "y": 6,
+            "w": 90,
+            "h": 89
+          }
+        },
+        {
+          "filename": "Icon_BombSize",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 90,
+            "h": 74
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 90,
+            "h": 74
+          },
+          "frame": {
+            "x": 1950,
+            "y": 107,
+            "w": 90,
+            "h": 74
+          }
+        },
+        {
+          "filename": "Icon_Fart",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 90,
+            "h": 70
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 90,
+            "h": 70
+          },
+          "frame": {
+            "x": 1950,
+            "y": 193,
+            "w": 90,
+            "h": 70
+          }
+        },
+        {
+          "filename": "Icon_Burp",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 90,
+            "h": 63
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 90,
+            "h": 63
+          },
+          "frame": {
+            "x": 1950,
+            "y": 275,
+            "w": 90,
+            "h": 63
+          }
+        },
+        {
+          "filename": "Drone",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 88,
+            "h": 48
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 88,
+            "h": 48
+          },
+          "frame": {
+            "x": 1950,
+            "y": 350,
+            "w": 88,
+            "h": 48
+          }
+        },
+        {
+          "filename": "HTPIcon_Mouse",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 87,
+            "h": 100
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 87,
+            "h": 100
+          },
+          "frame": {
+            "x": 1950,
+            "y": 410,
+            "w": 87,
+            "h": 100
+          }
+        },
+        {
+          "filename": "splash_particle_04",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 87,
+            "h": 69
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 87,
+            "h": 69
+          },
+          "frame": {
+            "x": 1950,
+            "y": 522,
+            "w": 87,
+            "h": 69
+          }
+        },
+        {
+          "filename": "splash_particle_03",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 86,
+            "h": 53
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 86,
+            "h": 53
+          },
+          "frame": {
+            "x": 1950,
+            "y": 603,
+            "w": 86,
+            "h": 53
+          }
+        },
+        {
+          "filename": "Enemy_Soldier",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 85,
+            "h": 89
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 85,
+            "h": 89
+          },
+          "frame": {
+            "x": 1950,
+            "y": 668,
+            "w": 85,
+            "h": 89
+          }
+        },
+        {
+          "filename": "Icon_BirdSeed",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 85,
+            "h": 66
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 85,
+            "h": 66
+          },
+          "frame": {
+            "x": 1950,
+            "y": 769,
+            "w": 85,
+            "h": 66
+          }
+        },
+        {
+          "filename": "Icon_ToxicPoo",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 84,
+            "h": 66
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 84,
+            "h": 66
+          },
+          "frame": {
+            "x": 1950,
+            "y": 847,
+            "w": 84,
+            "h": 66
+          }
+        },
+        {
+          "filename": "CyberEagle_Bomb",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 79,
+            "h": 105
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 79,
+            "h": 105
+          },
+          "frame": {
+            "x": 1950,
+            "y": 925,
+            "w": 79,
+            "h": 105
+          }
+        },
+        {
+          "filename": "LevelCompleted_Label",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 616,
+            "h": 214
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 616,
+            "h": 214
+          },
+          "frame": {
+            "x": 558,
+            "y": 1042,
+            "w": 616,
+            "h": 214
+          }
+        },
+        {
+          "filename": "collect_02",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 100,
+            "h": 143
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 100,
+            "h": 143
+          },
+          "frame": {
+            "x": 1186,
+            "y": 1042,
+            "w": 100,
+            "h": 143
+          }
+        },
+        {
+          "filename": "Title",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 611,
+            "h": 358
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 611,
+            "h": 358
+          },
+          "frame": {
+            "x": 1298,
+            "y": 1068,
+            "w": 611,
+            "h": 358
+          }
+        },
+        {
+          "filename": "collect_03",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 100,
+            "h": 116
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 100,
+            "h": 116
+          },
+          "frame": {
+            "x": 1186,
+            "y": 1257,
+            "w": 100,
+            "h": 116
+          }
+        },
+        {
+          "filename": "ParkBushes",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 77,
+            "h": 47
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 77,
+            "h": 47
+          },
+          "frame": {
+            "x": 1186,
+            "y": 1197,
+            "w": 77,
+            "h": 47
+          }
+        },
+        {
+          "filename": "LevelIcon_Lab",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 120,
+            "h": 131
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 120,
+            "h": 131
+          },
+          "frame": {
+            "x": 1921,
+            "y": 1257,
+            "w": 120,
+            "h": 131
+          }
+        },
+        {
+          "filename": "LevelIcon_Scifi",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 120,
+            "h": 131
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 120,
+            "h": 131
+          },
+          "frame": {
+            "x": 1921,
+            "y": 1400,
+            "w": 120,
+            "h": 131
+          }
+        },
+        {
+          "filename": "splash01",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 455,
+            "h": 472
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 455,
+            "h": 472
+          },
+          "frame": {
+            "x": 558,
+            "y": 1543,
+            "w": 455,
+            "h": 472
+          }
+        },
+        {
+          "filename": "Teleport",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 149,
+            "h": 153
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 149,
+            "h": 153
+          },
+          "frame": {
+            "x": 1025,
+            "y": 1268,
+            "w": 149,
+            "h": 153
+          }
+        },
+        {
+          "filename": "collect_04",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 100,
+            "h": 100
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 100,
+            "h": 100
+          },
+          "frame": {
+            "x": 1186,
+            "y": 1385,
+            "w": 100,
+            "h": 100
+          }
+        },
+        {
+          "filename": "BattleDroid_ShieldCharge",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 226,
+            "h": 98
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 226,
+            "h": 98
+          },
+          "frame": {
+            "x": 558,
+            "y": 1433,
+            "w": 226,
+            "h": 98
+          }
+        },
+        {
+          "filename": "AlienWithoutAGun",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 59,
+            "h": 98
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 59,
+            "h": 98
+          },
+          "frame": {
+            "x": 796,
+            "y": 1433,
+            "w": 59,
+            "h": 98
+          }
+        },
+        {
+          "filename": "HTPPanel",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 446,
+            "h": 152
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 446,
+            "h": 152
+          },
+          "frame": {
+            "x": 558,
+            "y": 1268,
+            "w": 446,
+            "h": 152
+          }
+        },
+        {
+          "filename": "Enemy_Punk",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 67,
+            "h": 99
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 67,
+            "h": 99
+          },
+          "frame": {
+            "x": 867,
+            "y": 1432,
+            "w": 67,
+            "h": 99
+          }
+        },
+        {
+          "filename": "Icon_Pierd",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 67,
+            "h": 70
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 67,
+            "h": 70
+          },
+          "frame": {
+            "x": 946,
+            "y": 1432,
+            "w": 67,
+            "h": 70
+          }
+        },
+        {
+          "filename": "Shield",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 147,
+            "h": 147
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 147,
+            "h": 147
+          },
+          "frame": {
+            "x": 1025,
+            "y": 1433,
+            "w": 147,
+            "h": 147
+          }
+        },
+        {
+          "filename": "Clouds_Lab",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 578,
+            "h": 539
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 578,
+            "h": 539
+          },
+          "frame": {
+            "x": 1184,
+            "y": 1497,
+            "w": 578,
+            "h": 539
+          }
+        },
+        {
+          "filename": "BattleDroid_PoisonArrow",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 267,
+            "h": 92
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 267,
+            "h": 92
+          },
+          "frame": {
+            "x": 1774,
+            "y": 1543,
+            "w": 267,
+            "h": 92
+          }
+        },
+        {
+          "filename": "Enemy_Worker",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 69,
+            "h": 93
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 69,
+            "h": 93
+          },
+          "frame": {
+            "x": 1774,
+            "y": 1438,
+            "w": 69,
+            "h": 93
+          }
+        },
+        {
+          "filename": "star",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 46,
+            "h": 46
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 46,
+            "h": 46
+          },
+          "frame": {
+            "x": 1298,
+            "y": 1438,
+            "w": 46,
+            "h": 46
+          }
+        },
+        {
+          "filename": "Star_Lvl1",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 44,
+            "h": 46
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 44,
+            "h": 46
+          },
+          "frame": {
+            "x": 1356,
+            "y": 1438,
+            "w": 44,
+            "h": 46
+          }
+        },
+        {
+          "filename": "Sticker_Hydrant",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 52,
+            "h": 83
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 52,
+            "h": 83
+          },
+          "frame": {
+            "x": 1855,
+            "y": 1438,
+            "w": 52,
+            "h": 83
+          }
+        },
+        {
+          "filename": "Btn_Play",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 265,
+            "h": 114
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 265,
+            "h": 114
+          },
+          "frame": {
+            "x": 1774,
+            "y": 1647,
+            "w": 265,
+            "h": 114
+          }
+        },
+        {
+          "filename": "PooShot",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 43,
+            "h": 44
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 43,
+            "h": 44
+          },
+          "frame": {
+            "x": 1412,
+            "y": 1438,
+            "w": 43,
+            "h": 44
+          }
+        },
+        {
+          "filename": "Sticker_Grass04",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 52,
+            "h": 43
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 52,
+            "h": 43
+          },
+          "frame": {
+            "x": 1467,
+            "y": 1438,
+            "w": 52,
+            "h": 43
+          }
+        },
+        {
+          "filename": "Projectile_Rock",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 47,
+            "h": 42
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 47,
+            "h": 42
+          },
+          "frame": {
+            "x": 1531,
+            "y": 1438,
+            "w": 47,
+            "h": 42
+          }
+        },
+        {
+          "filename": "BattleDroid_ShieldGenerator",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 142,
+            "h": 121
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 142,
+            "h": 121
+          },
+          "frame": {
+            "x": 1025,
+            "y": 1592,
+            "w": 142,
+            "h": 121
+          }
+        },
+        {
+          "filename": "Icon_Time",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 35,
+            "h": 41
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 35,
+            "h": 41
+          },
+          "frame": {
+            "x": 1590,
+            "y": 1438,
+            "w": 35,
+            "h": 41
+          }
+        },
+        {
+          "filename": "Icon_Kills",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 36,
+            "h": 40
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 36,
+            "h": 40
+          },
+          "frame": {
+            "x": 1637,
+            "y": 1438,
+            "w": 36,
+            "h": 40
+          }
+        },
+        {
+          "filename": "splash_particle_01",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 57,
+            "h": 39
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 57,
+            "h": 39
+          },
+          "frame": {
+            "x": 1685,
+            "y": 1438,
+            "w": 57,
+            "h": 39
+          }
+        },
+        {
+          "filename": "eagle_wind",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 139,
+            "h": 129
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 139,
+            "h": 129
+          },
+          "frame": {
+            "x": 1025,
+            "y": 1725,
+            "w": 139,
+            "h": 129
+          }
+        },
+        {
+          "filename": "Sticker_Brain",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 133,
+            "h": 173
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 133,
+            "h": 173
+          },
+          "frame": {
+            "x": 1025,
+            "y": 1866,
+            "w": 133,
+            "h": 173
+          }
+        },
+        {
+          "filename": "hitanim",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 256,
+            "h": 128
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 256,
+            "h": 128
+          },
+          "frame": {
+            "x": 1774,
+            "y": 1773,
+            "w": 256,
+            "h": 128
+          }
+        },
+        {
+          "filename": "splash_b_03",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 256,
+            "h": 128
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 256,
+            "h": 128
+          },
+          "frame": {
+            "x": 1774,
+            "y": 1913,
+            "w": 256,
+            "h": 128
+          }
+        }
+      ]
+    },
+    {
+      "image": "texture-1.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2048,
+        "h": 2047
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "splash_fountain_shot",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 1280,
+            "h": 1024
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 1280,
+            "h": 1024
+          },
+          "frame": {
+            "x": 6,
+            "y": 6,
+            "w": 1280,
+            "h": 1024
+          }
+        },
+        {
+          "filename": "BG_Lab",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 640,
+            "h": 1050
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 640,
+            "h": 1050
+          },
+          "frame": {
+            "x": 1298,
+            "y": 6,
+            "w": 640,
+            "h": 1050
+          }
+        },
+        {
+          "filename": "Btn_Settings",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 83,
+            "h": 94
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 83,
+            "h": 94
+          },
+          "frame": {
+            "x": 1950,
+            "y": 6,
+            "w": 83,
+            "h": 94
+          }
+        },
+        {
+          "filename": "Star_Lvl3",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 83,
+            "h": 86
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 83,
+            "h": 86
+          },
+          "frame": {
+            "x": 1950,
+            "y": 112,
+            "w": 83,
+            "h": 86
+          }
+        },
+        {
+          "filename": "pigeon",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 83,
+            "h": 81
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 83,
+            "h": 81
+          },
+          "frame": {
+            "x": 1950,
+            "y": 210,
+            "w": 83,
+            "h": 81
+          }
+        },
+        {
+          "filename": "Sticker_Box",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 82,
+            "h": 85
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 82,
+            "h": 85
+          },
+          "frame": {
+            "x": 1950,
+            "y": 303,
+            "w": 82,
+            "h": 85
+          }
+        },
+        {
+          "filename": "Sticker_Fan",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 82,
+            "h": 85
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 82,
+            "h": 85
+          },
+          "frame": {
+            "x": 1950,
+            "y": 400,
+            "w": 82,
+            "h": 85
+          }
+        },
+        {
+          "filename": "Icon_SpeedUp",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 82,
+            "h": 56
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 82,
+            "h": 56
+          },
+          "frame": {
+            "x": 1950,
+            "y": 497,
+            "w": 82,
+            "h": 56
+          }
+        },
+        {
+          "filename": "Enemy_Kid",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 81,
+            "h": 78
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 81,
+            "h": 78
+          },
+          "frame": {
+            "x": 1950,
+            "y": 565,
+            "w": 81,
+            "h": 78
+          }
+        },
+        {
+          "filename": "PierdSmoke",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 81,
+            "h": 72
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 81,
+            "h": 72
+          },
+          "frame": {
+            "x": 1950,
+            "y": 655,
+            "w": 81,
+            "h": 72
+          }
+        },
+        {
+          "filename": "Icon_FasterFire",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 81,
+            "h": 68
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 81,
+            "h": 68
+          },
+          "frame": {
+            "x": 1950,
+            "y": 739,
+            "w": 81,
+            "h": 68
+          }
+        },
+        {
+          "filename": "Enemy_Cop",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 80,
+            "h": 94
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 80,
+            "h": 94
+          },
+          "frame": {
+            "x": 1950,
+            "y": 819,
+            "w": 80,
+            "h": 94
+          }
+        },
+        {
+          "filename": "cover_arrow",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 80,
+            "h": 94
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 80,
+            "h": 94
+          },
+          "frame": {
+            "x": 1950,
+            "y": 925,
+            "w": 80,
+            "h": 94
+          }
+        },
+        {
+          "filename": "BekBubble",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 73,
+            "h": 73
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 73,
+            "h": 73
+          },
+          "frame": {
+            "x": 1950,
+            "y": 1031,
+            "w": 73,
+            "h": 73
+          }
+        },
+        {
+          "filename": "StoryPanel_EarthUnderAttack",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 521,
+            "h": 620
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 521,
+            "h": 620
+          },
+          "frame": {
+            "x": 6,
+            "y": 1116,
+            "w": 521,
+            "h": 620
+          }
+        },
+        {
+          "filename": "Icon_Bek",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 102,
+            "h": 62
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 102,
+            "h": 62
+          },
+          "frame": {
+            "x": 6,
+            "y": 1042,
+            "w": 102,
+            "h": 62
+          }
+        },
+        {
+          "filename": "Icon_TemporaryShield",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 56,
+            "h": 61
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 56,
+            "h": 61
+          },
+          "frame": {
+            "x": 120,
+            "y": 1042,
+            "w": 56,
+            "h": 61
+          }
+        },
+        {
+          "filename": "UpgradeLevel_0",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 139,
+            "h": 33
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 139,
+            "h": 33
+          },
+          "frame": {
+            "x": 188,
+            "y": 1068,
+            "w": 139,
+            "h": 33
+          }
+        },
+        {
+          "filename": "UpgradeLevel_1",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 139,
+            "h": 33
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 139,
+            "h": 33
+          },
+          "frame": {
+            "x": 339,
+            "y": 1068,
+            "w": 139,
+            "h": 33
+          }
+        },
+        {
+          "filename": "UpgradeLevel_2",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 139,
+            "h": 33
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 139,
+            "h": 33
+          },
+          "frame": {
+            "x": 490,
+            "y": 1068,
+            "w": 139,
+            "h": 33
+          }
+        },
+        {
+          "filename": "Icon_AddPSidekick",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 66,
+            "h": 57
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 66,
+            "h": 57
+          },
+          "frame": {
+            "x": 641,
+            "y": 1042,
+            "w": 66,
+            "h": 57
+          }
+        },
+        {
+          "filename": "Boss_Statue",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 187,
+            "h": 285
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 187,
+            "h": 285
+          },
+          "frame": {
+            "x": 6,
+            "y": 1748,
+            "w": 187,
+            "h": 285
+          }
+        },
+        {
+          "filename": "Bossfight",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 532,
+            "h": 171
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 532,
+            "h": 171
+          },
+          "frame": {
+            "x": 719,
+            "y": 1042,
+            "w": 532,
+            "h": 171
+          }
+        },
+        {
+          "filename": "Tree_04",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 66,
+            "h": 135
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 66,
+            "h": 135
+          },
+          "frame": {
+            "x": 641,
+            "y": 1111,
+            "w": 66,
+            "h": 135
+          }
+        },
+        {
+          "filename": "poop_mark_tile",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 768,
+            "h": 64
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 768,
+            "h": 64
+          },
+          "frame": {
+            "x": 1263,
+            "y": 1116,
+            "w": 768,
+            "h": 64
+          }
+        },
+        {
+          "filename": "UpgradeLevel_3",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 139,
+            "h": 33
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 139,
+            "h": 33
+          },
+          "frame": {
+            "x": 1263,
+            "y": 1068,
+            "w": 139,
+            "h": 33
+          }
+        },
+        {
+          "filename": "UpgradeLevel_4",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 139,
+            "h": 33
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 139,
+            "h": 33
+          },
+          "frame": {
+            "x": 1414,
+            "y": 1068,
+            "w": 139,
+            "h": 33
+          }
+        },
+        {
+          "filename": "UpgradeLevel_5",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 139,
+            "h": 33
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 139,
+            "h": 33
+          },
+          "frame": {
+            "x": 1565,
+            "y": 1068,
+            "w": 139,
+            "h": 33
+          }
+        },
+        {
+          "filename": "Sticker_Grass03",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 48,
+            "h": 33
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 48,
+            "h": 33
+          },
+          "frame": {
+            "x": 1716,
+            "y": 1068,
+            "w": 48,
+            "h": 33
+          }
+        },
+        {
+          "filename": "Sticker_Grass02",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 42,
+            "h": 33
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 42,
+            "h": 33
+          },
+          "frame": {
+            "x": 1776,
+            "y": 1068,
+            "w": 42,
+            "h": 33
+          }
+        },
+        {
+          "filename": "Sticker_Grass01",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 44,
+            "h": 31
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 44,
+            "h": 31
+          },
+          "frame": {
+            "x": 1830,
+            "y": 1068,
+            "w": 44,
+            "h": 31
+          }
+        },
+        {
+          "filename": "CornerBL",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 29,
+            "h": 29
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 29,
+            "h": 29
+          },
+          "frame": {
+            "x": 1886,
+            "y": 1068,
+            "w": 29,
+            "h": 29
+          }
+        },
+        {
+          "filename": "Enemy_Turist",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 72,
+            "h": 95
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 72,
+            "h": 95
+          },
+          "frame": {
+            "x": 539,
+            "y": 1113,
+            "w": 72,
+            "h": 95
+          }
+        },
+        {
+          "filename": "Enemy_Businessman",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 65,
+            "h": 88
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 65,
+            "h": 88
+          },
+          "frame": {
+            "x": 539,
+            "y": 1220,
+            "w": 65,
+            "h": 88
+          }
+        },
+        {
+          "filename": "SelectionPanel",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 188,
+            "h": 256
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 188,
+            "h": 256
+          },
+          "frame": {
+            "x": 205,
+            "y": 1748,
+            "w": 188,
+            "h": 256
+          }
+        },
+        {
+          "filename": "UpgradePanel",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 188,
+            "h": 256
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 188,
+            "h": 256
+          },
+          "frame": {
+            "x": 405,
+            "y": 1748,
+            "w": 188,
+            "h": 256
+          }
+        },
+        {
+          "filename": "Boss_CyberEagle",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 527,
+            "h": 358
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 527,
+            "h": 358
+          },
+          "frame": {
+            "x": 539,
+            "y": 1320,
+            "w": 527,
+            "h": 358
+          }
+        },
+        {
+          "filename": "LevelBar",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 136,
+            "h": 50
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 136,
+            "h": 50
+          },
+          "frame": {
+            "x": 616,
+            "y": 1258,
+            "w": 136,
+            "h": 50
+          }
+        },
+        {
+          "filename": "Boss_HiveMasterMind",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 302,
+            "h": 349
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 302,
+            "h": 349
+          },
+          "frame": {
+            "x": 605,
+            "y": 1690,
+            "w": 302,
+            "h": 349
+          }
+        },
+        {
+          "filename": "feather",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 52,
+            "h": 39
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 52,
+            "h": 39
+          },
+          "frame": {
+            "x": 539,
+            "y": 1690,
+            "w": 52,
+            "h": 39
+          }
+        },
+        {
+          "filename": "WorldLocked",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 62,
+            "h": 77
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 62,
+            "h": 77
+          },
+          "frame": {
+            "x": 764,
+            "y": 1225,
+            "w": 62,
+            "h": 77
+          }
+        },
+        {
+          "filename": "Boss_BattleDroid",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 381,
+            "h": 342
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 381,
+            "h": 342
+          },
+          "frame": {
+            "x": 919,
+            "y": 1690,
+            "w": 381,
+            "h": 342
+          }
+        },
+        {
+          "filename": "Icon_XPMagnet",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 93,
+            "h": 73
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 93,
+            "h": 73
+          },
+          "frame": {
+            "x": 838,
+            "y": 1225,
+            "w": 93,
+            "h": 73
+          }
+        },
+        {
+          "filename": "WorldBar",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 514,
+            "h": 72
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 514,
+            "h": 72
+          },
+          "frame": {
+            "x": 943,
+            "y": 1225,
+            "w": 514,
+            "h": 72
+          }
+        },
+        {
+          "filename": "splash02",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 455,
+            "h": 472
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 455,
+            "h": 472
+          },
+          "frame": {
+            "x": 1469,
+            "y": 1192,
+            "w": 455,
+            "h": 472
+          }
+        },
+        {
+          "filename": "Klatka",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 106,
+            "h": 166
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 106,
+            "h": 166
+          },
+          "frame": {
+            "x": 1936,
+            "y": 1192,
+            "w": 106,
+            "h": 166
+          }
+        },
+        {
+          "filename": "Icon_BiggerBoom",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 106,
+            "h": 71
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 106,
+            "h": 71
+          },
+          "frame": {
+            "x": 1936,
+            "y": 1370,
+            "w": 106,
+            "h": 71
+          }
+        },
+        {
+          "filename": "BattleDroid_ArmElement",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 105,
+            "h": 66
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 105,
+            "h": 66
+          },
+          "frame": {
+            "x": 1936,
+            "y": 1453,
+            "w": 105,
+            "h": 66
+          }
+        },
+        {
+          "filename": "Sticker_Camera",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 104,
+            "h": 100
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 104,
+            "h": 100
+          },
+          "frame": {
+            "x": 1936,
+            "y": 1531,
+            "w": 104,
+            "h": 100
+          }
+        },
+        {
+          "filename": "splash_particle_02",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 101,
+            "h": 56
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 101,
+            "h": 56
+          },
+          "frame": {
+            "x": 1936,
+            "y": 1643,
+            "w": 101,
+            "h": 56
+          }
+        },
+        {
+          "filename": "rock02",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 342,
+            "h": 327
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 342,
+            "h": 327
+          },
+          "frame": {
+            "x": 1312,
+            "y": 1711,
+            "w": 342,
+            "h": 327
+          }
+        },
+        {
+          "filename": "rock01",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 253,
+            "h": 225
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 253,
+            "h": 225
+          },
+          "frame": {
+            "x": 1666,
+            "y": 1676,
+            "w": 253,
+            "h": 225
+          }
+        },
+        {
+          "filename": "Sticker_Sign",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 63,
+            "h": 128
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 63,
+            "h": 128
+          },
+          "frame": {
+            "x": 1666,
+            "y": 1913,
+            "w": 63,
+            "h": 128
+          }
+        },
+        {
+          "filename": "CoinBagPanel",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 182,
+            "h": 55
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 182,
+            "h": 55
+          },
+          "frame": {
+            "x": 1741,
+            "y": 1913,
+            "w": 182,
+            "h": 55
+          }
+        },
+        {
+          "filename": "Sticker_Sign_clear",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 63,
+            "h": 128
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 63,
+            "h": 128
+          },
+          "frame": {
+            "x": 1935,
+            "y": 1913,
+            "w": 63,
+            "h": 128
+          }
+        },
+        {
+          "filename": "Arrow",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 31,
+            "h": 37
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 31,
+            "h": 37
+          },
+          "frame": {
+            "x": 2010,
+            "y": 1913,
+            "w": 31,
+            "h": 37
+          }
+        },
+        {
+          "filename": "AlienWithAGun",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 109,
+            "h": 97
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 109,
+            "h": 97
+          },
+          "frame": {
+            "x": 1931,
+            "y": 1711,
+            "w": 109,
+            "h": 97
+          }
+        },
+        {
+          "filename": "CornerBR",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 29,
+            "h": 29
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 29,
+            "h": 29
+          },
+          "frame": {
+            "x": 2010,
+            "y": 1962,
+            "w": 29,
+            "h": 29
+          }
+        },
+        {
+          "filename": "CornerTL",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 29,
+            "h": 29
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 29,
+            "h": 29
+          },
+          "frame": {
+            "x": 2010,
+            "y": 2003,
+            "w": 29,
+            "h": 29
+          }
+        },
+        {
+          "filename": "Sticker_SciFiThingy1",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 52,
+            "h": 57
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 52,
+            "h": 57
+          },
+          "frame": {
+            "x": 1741,
+            "y": 1980,
+            "w": 52,
+            "h": 57
+          }
+        },
+        {
+          "filename": "Icon_HealSidekicks",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 118,
+            "h": 55
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 118,
+            "h": 55
+          },
+          "frame": {
+            "x": 1805,
+            "y": 1980,
+            "w": 118,
+            "h": 55
+          }
+        },
+        {
+          "filename": "HPPanel",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 139,
+            "h": 48
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 139,
+            "h": 48
+          },
+          "frame": {
+            "x": 1312,
+            "y": 1309,
+            "w": 139,
+            "h": 48
+          }
+        },
+        {
+          "filename": "CoinPanel",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 138,
+            "h": 49
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 138,
+            "h": 49
+          },
+          "frame": {
+            "x": 1312,
+            "y": 1369,
+            "w": 138,
+            "h": 49
+          }
+        },
+        {
+          "filename": "beak_bottom",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 304,
+            "h": 248
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 304,
+            "h": 248
+          },
+          "frame": {
+            "x": 1078,
+            "y": 1430,
+            "w": 304,
+            "h": 248
+          }
+        },
+        {
+          "filename": "Star_Lvl2",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 63,
+            "h": 65
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 63,
+            "h": 65
+          },
+          "frame": {
+            "x": 1394,
+            "y": 1430,
+            "w": 63,
+            "h": 65
+          }
+        },
+        {
+          "filename": "Sticker_SecondScreen",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 62,
+            "h": 65
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 62,
+            "h": 65
+          },
+          "frame": {
+            "x": 1394,
+            "y": 1507,
+            "w": 62,
+            "h": 65
+          }
+        },
+        {
+          "filename": "BarrierTile",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 62,
+            "h": 64
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 62,
+            "h": 64
+          },
+          "frame": {
+            "x": 1394,
+            "y": 1584,
+            "w": 62,
+            "h": 64
+          }
+        },
+        {
+          "filename": "UFOPixelShot",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 38,
+            "h": 39
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 38,
+            "h": 39
+          },
+          "frame": {
+            "x": 1394,
+            "y": 1660,
+            "w": 38,
+            "h": 39
+          }
+        },
+        {
+          "filename": "Icon_FastDrop",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 64,
+            "h": 72
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 64,
+            "h": 72
+          },
+          "frame": {
+            "x": 1931,
+            "y": 1820,
+            "w": 64,
+            "h": 72
+          }
+        },
+        {
+          "filename": "CornerTR",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 29,
+            "h": 29
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 29,
+            "h": 29
+          },
+          "frame": {
+            "x": 2007,
+            "y": 1820,
+            "w": 29,
+            "h": 29
+          }
+        },
+        {
+          "filename": "PoliceHelicopter",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 180,
+            "h": 99
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 180,
+            "h": 99
+          },
+          "frame": {
+            "x": 1078,
+            "y": 1309,
+            "w": 180,
+            "h": 99
+          }
+        }
+      ]
+    },
+    {
+      "image": "texture-2.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2046,
+        "h": 2048
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "BG_Park",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 640,
+            "h": 1050
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 640,
+            "h": 1050
+          },
+          "frame": {
+            "x": 6,
+            "y": 6,
+            "w": 640,
+            "h": 1050
+          }
+        },
+        {
+          "filename": "StoryPanel_GameCompleted",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 521,
+            "h": 620
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 521,
+            "h": 620
+          },
+          "frame": {
+            "x": 6,
+            "y": 1068,
+            "w": 521,
+            "h": 620
+          }
+        },
+        {
+          "filename": "GameOver",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 481,
+            "h": 320
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 481,
+            "h": 320
+          },
+          "frame": {
+            "x": 6,
+            "y": 1700,
+            "w": 481,
+            "h": 320
+          }
+        },
+        {
+          "filename": "claw",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 350,
+            "h": 319
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 350,
+            "h": 319
+          },
+          "frame": {
+            "x": 499,
+            "y": 1700,
+            "w": 350,
+            "h": 319
+          }
+        },
+        {
+          "filename": "StoryPanel_Regular",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 521,
+            "h": 311
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 521,
+            "h": 311
+          },
+          "frame": {
+            "x": 861,
+            "y": 1700,
+            "w": 521,
+            "h": 311
+          }
+        },
+        {
+          "filename": "BG_fiolet",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 640,
+            "h": 1050
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 640,
+            "h": 1050
+          },
+          "frame": {
+            "x": 1394,
+            "y": 6,
+            "w": 640,
+            "h": 1050
+          }
+        },
+        {
+          "filename": "splash03",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 455,
+            "h": 472
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 455,
+            "h": 472
+          },
+          "frame": {
+            "x": 539,
+            "y": 1068,
+            "w": 455,
+            "h": 472
+          }
+        },
+        {
+          "filename": "Btn_Buy",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 211,
+            "h": 136
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 211,
+            "h": 136
+          },
+          "frame": {
+            "x": 539,
+            "y": 1552,
+            "w": 211,
+            "h": 136
+          }
+        },
+        {
+          "filename": "Tree_02",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 115,
+            "h": 133
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 115,
+            "h": 133
+          },
+          "frame": {
+            "x": 762,
+            "y": 1552,
+            "w": 115,
+            "h": 133
+          }
+        },
+        {
+          "filename": "LevelIcon_Street",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 120,
+            "h": 131
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 120,
+            "h": 131
+          },
+          "frame": {
+            "x": 889,
+            "y": 1552,
+            "w": 120,
+            "h": 131
+          }
+        },
+        {
+          "filename": "splash04",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 455,
+            "h": 472
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 455,
+            "h": 472
+          },
+          "frame": {
+            "x": 1006,
+            "y": 1068,
+            "w": 455,
+            "h": 472
+          }
+        },
+        {
+          "filename": "LevelIcon_Forst",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 119,
+            "h": 131
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 119,
+            "h": 131
+          },
+          "frame": {
+            "x": 1021,
+            "y": 1552,
+            "w": 119,
+            "h": 131
+          }
+        },
+        {
+          "filename": "LevelIcon_Park",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 119,
+            "h": 131
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 119,
+            "h": 131
+          },
+          "frame": {
+            "x": 1152,
+            "y": 1552,
+            "w": 119,
+            "h": 131
+          }
+        },
+        {
+          "filename": "eagle_body",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 120,
+            "h": 123
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 120,
+            "h": 123
+          },
+          "frame": {
+            "x": 1283,
+            "y": 1552,
+            "w": 120,
+            "h": 123
+          }
+        },
+        {
+          "filename": "beak_top",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 355,
+            "h": 355
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 355,
+            "h": 355
+          },
+          "frame": {
+            "x": 1394,
+            "y": 1687,
+            "w": 355,
+            "h": 355
+          }
+        },
+        {
+          "filename": "CaptainPigeon_Torso",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 120,
+            "h": 120
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 120,
+            "h": 120
+          },
+          "frame": {
+            "x": 1415,
+            "y": 1552,
+            "w": 120,
+            "h": 120
+          }
+        },
+        {
+          "filename": "splash05",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 455,
+            "h": 472
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 455,
+            "h": 472
+          },
+          "frame": {
+            "x": 1473,
+            "y": 1068,
+            "w": 455,
+            "h": 472
+          }
+        },
+        {
+          "filename": "collect_05",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 100,
+            "h": 94
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 100,
+            "h": 94
+          },
+          "frame": {
+            "x": 1940,
+            "y": 1068,
+            "w": 100,
+            "h": 94
+          }
+        },
+        {
+          "filename": "CaptainPigeon_Wing",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 120,
+            "h": 120
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 120,
+            "h": 120
+          },
+          "frame": {
+            "x": 1547,
+            "y": 1552,
+            "w": 120,
+            "h": 120
+          }
+        },
+        {
+          "filename": "NinjaPigeon_Torso",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 120,
+            "h": 120
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 120,
+            "h": 120
+          },
+          "frame": {
+            "x": 1679,
+            "y": 1552,
+            "w": 120,
+            "h": 120
+          }
+        },
+        {
+          "filename": "Enemy_Lady",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 97,
+            "h": 89
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 97,
+            "h": 89
+          },
+          "frame": {
+            "x": 1940,
+            "y": 1174,
+            "w": 97,
+            "h": 89
+          }
+        },
+        {
+          "filename": "Icon_MultiPoop",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 95,
+            "h": 66
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 95,
+            "h": 66
+          },
+          "frame": {
+            "x": 1940,
+            "y": 1275,
+            "w": 95,
+            "h": 66
+          }
+        },
+        {
+          "filename": "AdCoinsForWatchingAd",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 198,
+            "h": 67
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 198,
+            "h": 67
+          },
+          "frame": {
+            "x": 1811,
+            "y": 1552,
+            "w": 198,
+            "h": 67
+          }
+        },
+        {
+          "filename": "BarrierEmitter_Down",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 64,
+            "h": 64
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "frame": {
+            "x": 1940,
+            "y": 1353,
+            "w": 64,
+            "h": 64
+          }
+        },
+        {
+          "filename": "ParkLamp",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 36,
+            "h": 91
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 36,
+            "h": 91
+          },
+          "frame": {
+            "x": 1940,
+            "y": 1429,
+            "w": 36,
+            "h": 91
+          }
+        },
+        {
+          "filename": "Coin",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 52,
+            "h": 56
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 52,
+            "h": 56
+          },
+          "frame": {
+            "x": 1988,
+            "y": 1429,
+            "w": 52,
+            "h": 56
+          }
+        },
+        {
+          "filename": "bomb_icon",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 187,
+            "h": 193
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 187,
+            "h": 193
+          },
+          "frame": {
+            "x": 1811,
+            "y": 1631,
+            "w": 187,
+            "h": 193
+          }
+        },
+        {
+          "filename": "Hand",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 181,
+            "h": 204
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 181,
+            "h": 204
+          },
+          "frame": {
+            "x": 1811,
+            "y": 1836,
+            "w": 181,
+            "h": 204
+          }
+        },
+        {
+          "filename": "Btn_DoubleCoins",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 428,
+            "h": 114
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 428,
+            "h": 114
+          },
+          "frame": {
+            "x": 658,
+            "y": 6,
+            "w": 428,
+            "h": 114
+          }
+        },
+        {
+          "filename": "Boss_Car",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 185,
+            "h": 110
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 185,
+            "h": 110
+          },
+          "frame": {
+            "x": 1098,
+            "y": 6,
+            "w": 185,
+            "h": 110
+          }
+        },
+        {
+          "filename": "BarrierEmitter_Down_Disabled",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 64,
+            "h": 64
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "frame": {
+            "x": 1295,
+            "y": 6,
+            "w": 64,
+            "h": 64
+          }
+        },
+        {
+          "filename": "BarrierEmitter_Up",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 64,
+            "h": 64
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "frame": {
+            "x": 1295,
+            "y": 82,
+            "w": 64,
+            "h": 64
+          }
+        },
+        {
+          "filename": "Cloud",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 182,
+            "h": 139
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 182,
+            "h": 139
+          },
+          "frame": {
+            "x": 1098,
+            "y": 128,
+            "w": 182,
+            "h": 139
+          }
+        },
+        {
+          "filename": "aimed_rocket",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 419,
+            "h": 200
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 419,
+            "h": 200
+          },
+          "frame": {
+            "x": 658,
+            "y": 132,
+            "w": 419,
+            "h": 200
+          }
+        },
+        {
+          "filename": "Clouds_SciFiBase",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 287,
+            "h": 254
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 287,
+            "h": 254
+          },
+          "frame": {
+            "x": 1089,
+            "y": 279,
+            "w": 287,
+            "h": 254
+          }
+        },
+        {
+          "filename": "Sticker_SciFiThingy2",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 57,
+            "h": 86
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 57,
+            "h": 86
+          },
+          "frame": {
+            "x": 1292,
+            "y": 158,
+            "w": 57,
+            "h": 86
+          }
+        },
+        {
+          "filename": "Btn_ChooseThePigeon",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 389,
+            "h": 104
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 389,
+            "h": 104
+          },
+          "frame": {
+            "x": 658,
+            "y": 344,
+            "w": 389,
+            "h": 104
+          }
+        },
+        {
+          "filename": "LevelUp",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 382,
+            "h": 55
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 382,
+            "h": 55
+          },
+          "frame": {
+            "x": 658,
+            "y": 460,
+            "w": 382,
+            "h": 55
+          }
+        },
+        {
+          "filename": "Btn_GetAllUpgrades",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 371,
+            "h": 99
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 371,
+            "h": 99
+          },
+          "frame": {
+            "x": 658,
+            "y": 527,
+            "w": 371,
+            "h": 99
+          }
+        },
+        {
+          "filename": "Btn_Continue",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 334,
+            "h": 111
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 334,
+            "h": 111
+          },
+          "frame": {
+            "x": 1041,
+            "y": 545,
+            "w": 334,
+            "h": 111
+          }
+        },
+        {
+          "filename": "GOStatsPanel",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 369,
+            "h": 225
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 369,
+            "h": 225
+          },
+          "frame": {
+            "x": 658,
+            "y": 638,
+            "w": 369,
+            "h": 225
+          }
+        },
+        {
+          "filename": "Btn_Revive",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 330,
+            "h": 102
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 330,
+            "h": 102
+          },
+          "frame": {
+            "x": 1039,
+            "y": 668,
+            "w": 330,
+            "h": 102
+          }
+        },
+        {
+          "filename": "BattleDroid_Turret",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 166,
+            "h": 152
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 166,
+            "h": 152
+          },
+          "frame": {
+            "x": 658,
+            "y": 875,
+            "w": 166,
+            "h": 152
+          }
+        },
+        {
+          "filename": "Tree_03",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 108,
+            "h": 144
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 108,
+            "h": 144
+          },
+          "frame": {
+            "x": 836,
+            "y": 875,
+            "w": 108,
+            "h": 144
+          }
+        },
+        {
+          "filename": "NinjaPigeon_Wing",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 120,
+            "h": 120
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 120,
+            "h": 120
+          },
+          "frame": {
+            "x": 956,
+            "y": 875,
+            "w": 120,
+            "h": 120
+          }
+        },
+        {
+          "filename": "Sticker_Bench",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 112,
+            "h": 69
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 112,
+            "h": 69
+          },
+          "frame": {
+            "x": 1039,
+            "y": 782,
+            "w": 112,
+            "h": 69
+          }
+        },
+        {
+          "filename": "Pigeon_Torso",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 120,
+            "h": 120
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 120,
+            "h": 120
+          },
+          "frame": {
+            "x": 1088,
+            "y": 863,
+            "w": 120,
+            "h": 120
+          }
+        },
+        {
+          "filename": "BarrierEmitter_Up_Disabled",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 64,
+            "h": 64
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "frame": {
+            "x": 1163,
+            "y": 782,
+            "w": 64,
+            "h": 64
+          }
+        },
+        {
+          "filename": "HTPIcon_WSAD",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 136,
+            "h": 95
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 136,
+            "h": 95
+          },
+          "frame": {
+            "x": 1239,
+            "y": 782,
+            "w": 136,
+            "h": 95
+          }
+        },
+        {
+          "filename": "ZnacznikDoBossa",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 57,
+            "h": 53
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 57,
+            "h": 53
+          },
+          "frame": {
+            "x": 1088,
+            "y": 995,
+            "w": 57,
+            "h": 53
+          }
+        },
+        {
+          "filename": "PooShot03",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 50,
+            "h": 53
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 50,
+            "h": 53
+          },
+          "frame": {
+            "x": 1157,
+            "y": 995,
+            "w": 50,
+            "h": 53
+          }
+        },
+        {
+          "filename": "PooShot05",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 50,
+            "h": 53
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 50,
+            "h": 53
+          },
+          "frame": {
+            "x": 1219,
+            "y": 995,
+            "w": 50,
+            "h": 53
+          }
+        },
+        {
+          "filename": "Sticker_Trashcan",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 58,
+            "h": 84
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 58,
+            "h": 84
+          },
+          "frame": {
+            "x": 1220,
+            "y": 889,
+            "w": 58,
+            "h": 84
+          }
+        },
+        {
+          "filename": "BossBarrierEmitter_Down",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 64,
+            "h": 64
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "frame": {
+            "x": 1281,
+            "y": 985,
+            "w": 64,
+            "h": 64
+          }
+        },
+        {
+          "filename": "BossBarrierEmitter_Down_Disabled",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 64,
+            "h": 64
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "frame": {
+            "x": 1290,
+            "y": 889,
+            "w": 64,
+            "h": 64
+          }
+        }
+      ]
+    },
+    {
+      "image": "texture-3.png",
+      "format": "RGBA8888",
+      "size": {
+        "w": 2048,
+        "h": 259
+      },
+      "scale": 1,
+      "frames": [
+        {
+          "filename": "HTPIcon_CollectStars",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 123,
+            "h": 115
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 123,
+            "h": 115
+          },
+          "frame": {
+            "x": 6,
+            "y": 6,
+            "w": 123,
+            "h": 115
+          }
+        },
+        {
+          "filename": "Enemy_UFO",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 123,
+            "h": 95
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 123,
+            "h": 95
+          },
+          "frame": {
+            "x": 141,
+            "y": 6,
+            "w": 123,
+            "h": 95
+          }
+        },
+        {
+          "filename": "Pigeon_Torso_ninja",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 120,
+            "h": 120
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 120,
+            "h": 120
+          },
+          "frame": {
+            "x": 276,
+            "y": 6,
+            "w": 120,
+            "h": 120
+          }
+        },
+        {
+          "filename": "Pigeon_Torso_presidente",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 120,
+            "h": 120
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 120,
+            "h": 120
+          },
+          "frame": {
+            "x": 141,
+            "y": 113,
+            "w": 120,
+            "h": 120
+          }
+        },
+        {
+          "filename": "Pigeon_Wing",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 120,
+            "h": 120
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 120,
+            "h": 120
+          },
+          "frame": {
+            "x": 6,
+            "y": 133,
+            "w": 120,
+            "h": 120
+          }
+        },
+        {
+          "filename": "PunkPigeon_Torso",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 120,
+            "h": 120
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 120,
+            "h": 120
+          },
+          "frame": {
+            "x": 408,
+            "y": 6,
+            "w": 120,
+            "h": 120
+          }
+        },
+        {
+          "filename": "PunkPigeon_Wing",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 120,
+            "h": 120
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 120,
+            "h": 120
+          },
+          "frame": {
+            "x": 540,
+            "y": 6,
+            "w": 120,
+            "h": 120
+          }
+        },
+        {
+          "filename": "SidePigeon_Torso",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 120,
+            "h": 120
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 120,
+            "h": 120
+          },
+          "frame": {
+            "x": 672,
+            "y": 6,
+            "w": 120,
+            "h": 120
+          }
+        },
+        {
+          "filename": "SidePigeon_Wing",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 120,
+            "h": 120
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 120,
+            "h": 120
+          },
+          "frame": {
+            "x": 804,
+            "y": 6,
+            "w": 120,
+            "h": 120
+          }
+        },
+        {
+          "filename": "ZombiePigeon_Torso",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 120,
+            "h": 120
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 120,
+            "h": 120
+          },
+          "frame": {
+            "x": 936,
+            "y": 6,
+            "w": 120,
+            "h": 120
+          }
+        },
+        {
+          "filename": "ZombiePigeon_Wing",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 120,
+            "h": 120
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 120,
+            "h": 120
+          },
+          "frame": {
+            "x": 1068,
+            "y": 6,
+            "w": 120,
+            "h": 120
+          }
+        },
+        {
+          "filename": "HTPIcon_Bomb",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 115,
+            "h": 113
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 115,
+            "h": 113
+          },
+          "frame": {
+            "x": 1200,
+            "y": 6,
+            "w": 115,
+            "h": 113
+          }
+        },
+        {
+          "filename": "KillcountLock",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 64,
+            "h": 64
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "frame": {
+            "x": 1327,
+            "y": 6,
+            "w": 64,
+            "h": 64
+          }
+        },
+        {
+          "filename": "Structure_Base_01",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 64,
+            "h": 64
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "frame": {
+            "x": 1403,
+            "y": 6,
+            "w": 64,
+            "h": 64
+          }
+        },
+        {
+          "filename": "Structure_Base_02",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 64,
+            "h": 64
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "frame": {
+            "x": 1479,
+            "y": 6,
+            "w": 64,
+            "h": 64
+          }
+        },
+        {
+          "filename": "Structure_Forest01",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 64,
+            "h": 64
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "frame": {
+            "x": 1555,
+            "y": 6,
+            "w": 64,
+            "h": 64
+          }
+        },
+        {
+          "filename": "Structure_Forest02",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 64,
+            "h": 64
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "frame": {
+            "x": 1631,
+            "y": 6,
+            "w": 64,
+            "h": 64
+          }
+        },
+        {
+          "filename": "Structure_Rock_01",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 64,
+            "h": 64
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 64,
+            "h": 64
+          },
+          "frame": {
+            "x": 1707,
+            "y": 6,
+            "w": 64,
+            "h": 64
+          }
+        },
+        {
+          "filename": "BossBarrierTile",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 62,
+            "h": 64
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 62,
+            "h": 64
+          },
+          "frame": {
+            "x": 1783,
+            "y": 6,
+            "w": 62,
+            "h": 64
+          }
+        },
+        {
+          "filename": "burp_bubble",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 55,
+            "h": 50
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 55,
+            "h": 50
+          },
+          "frame": {
+            "x": 1857,
+            "y": 6,
+            "w": 55,
+            "h": 50
+          }
+        },
+        {
+          "filename": "burp_particle",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 55,
+            "h": 50
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 55,
+            "h": 50
+          },
+          "frame": {
+            "x": 1924,
+            "y": 6,
+            "w": 55,
+            "h": 50
+          }
+        },
+        {
+          "filename": "Pointer",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 51,
+            "h": 52
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 51,
+            "h": 52
+          },
+          "frame": {
+            "x": 1991,
+            "y": 6,
+            "w": 51,
+            "h": 52
+          }
+        },
+        {
+          "filename": "fart_particle",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 55,
+            "h": 50
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 55,
+            "h": 50
+          },
+          "frame": {
+            "x": 1857,
+            "y": 68,
+            "w": 55,
+            "h": 50
+          }
+        },
+        {
+          "filename": "PooShot02",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 50,
+            "h": 52
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 50,
+            "h": 52
+          },
+          "frame": {
+            "x": 1924,
+            "y": 68,
+            "w": 50,
+            "h": 52
+          }
+        },
+        {
+          "filename": "PooShot04",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 50,
+            "h": 51
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 50,
+            "h": 51
+          },
+          "frame": {
+            "x": 1986,
+            "y": 70,
+            "w": 50,
+            "h": 51
+          }
+        },
+        {
+          "filename": "splash_particle_05",
+          "rotated": false,
+          "trimmed": false,
+          "sourceSize": {
+            "w": 55,
+            "h": 50
+          },
+          "spriteSourceSize": {
+            "x": 0,
+            "y": 0,
+            "w": 55,
+            "h": 50
+          },
+          "frame": {
+            "x": 1924,
+            "y": 6,
+            "w": 55,
+            "h": 50
+          }
+        }
+      ]
+    }
+  ]
+}
