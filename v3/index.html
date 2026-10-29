@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7f5f0" />
+  <meta name="description" content="Play Jelly Orbit, Tiki Treats, and Paper Boat Parade. Three original HTML5 playable ads in one interactive gallery." />
+  <title>Playfield — Playable Ad Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#gallery">Skip to gallery</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="Playfield home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span>playfield<span class="brand-dot">.</span></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#gallery">The gallery</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#about">About</a>
+      </nav>
+      <a class="header-cta" href="#gallery">Explore the ads <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-navigation">
+        <span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobile-navigation" aria-label="Mobile navigation" hidden>
+      <a href="#gallery">The gallery</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> A SPACE FOR PLAYABLE IDEAS <span class="eyebrow-line"></span> VOL. 01</div>
+          <h1 id="hero-title">A little play.<br /><em>A lot</em> of impact<span class="period">.</span></h1>
+          <p class="hero-description">A curated home for bite-sized interactive experiences. Match jellies, serve island treats, and set paper boats afloat. Pick a playable and jump right in.</p>
+          <div class="hero-actions">
+            <a href="#gallery" class="button button-dark">Explore the gallery <span class="button-arrow" aria-hidden="true">↗</span></a>
+            <div class="hero-stat"><strong>03</strong><span>playable<br />experiences</span></div>
+          </div>
+          <div class="hero-footnote"><span class="little-spark" aria-hidden="true">✳</span> Made to stand out. Built to be interacted with.</div>
+        </div>
+        <div class="hero-visual" aria-label="Gameplay previews of Jelly Orbit, Tiki Treats, and Paper Boat Parade">
+          <div class="hero-visual-grid" aria-hidden="true"></div>
+          <span class="hero-sticker sticker-top">PLAY <span>↗</span></span>
+          <div class="hero-device hero-device-left"><img src="assets/paper-boat-parade.jpg" alt="" /></div>
+          <div class="hero-device hero-device-right"><img src="assets/tiki-treats.jpg" alt="" /></div>
+          <div class="hero-device hero-device-center"><img src="assets/jelly-orbit.jpg" alt="" /></div>
+          <span class="hero-orbit orbit-one" aria-hidden="true">✳</span>
+          <span class="hero-orbit orbit-two" aria-hidden="true">✦</span>
+          <div class="hero-caption"><span class="caption-circle">↗</span> TRY SOMETHING NEW</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee-band" aria-hidden="true"><div>PLAY MORE <span>✳</span> SCROLL LESS <span>✳</span> THINK DIFFERENT <span>✳</span> PLAY MORE <span>✳</span> SCROLL LESS <span>✳</span> THINK DIFFERENT <span>✳</span></div></div>
+
+    <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+      <div class="shell">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker"><span class="tiny-square"></span> THE COLLECTION / 001–003</div>
+            <h2 id="gallery-title">Pick your <em>play.</em></h2>
+            <p>Three original playables, three ways to get hooked. Choose a game and play it right here in the gallery.</p>
+          </div>
+          <div class="gallery-count"><span id="visible-count">03</span><span>CREATIVES<br />ON DISPLAY</span></div>
+        </div>
+        <div class="filter-row" role="group" aria-label="Filter playable ads">
+          <button type="button" class="filter-chip active" data-filter="all" aria-pressed="true">All playables <span>03</span></button>
+          <button type="button" class="filter-chip" data-filter="match-3" aria-pressed="false">Match-3</button>
+          <button type="button" class="filter-chip" data-filter="serving" aria-pressed="false">Serving</button>
+          <button type="button" class="filter-chip" data-filter="puzzle" aria-pressed="false">Puzzle</button>
+        </div>
+        <div class="gallery-grid" id="gallery-grid" aria-live="polite"></div>
+        <p class="gallery-note"><span aria-hidden="true">✳</span> Play with a tap or a click. Restart any time and try again.</p>
+      </div>
+    </section>
+
+    <section class="how-section" id="how-it-works" aria-labelledby="how-title">
+      <div class="shell how-grid">
+        <div class="how-intro">
+          <div class="section-kicker"><span class="tiny-square"></span> EXPERIENCE FIRST</div>
+          <h2 id="how-title">Not just an ad.<br /><em>An experience.</em></h2>
+          <p>Good playable creative invites people to try before they decide. This layout gives every experience its own place to shine.</p>
+          <span class="asterisk-large" aria-hidden="true">✳</span>
+        </div>
+        <div class="how-list">
+          <div class="how-item"><span class="step-number">01 /</span><div><h3>Discover</h3><p>Explore the collection and find a creative that catches your eye.</p></div><span class="step-icon">↗</span></div>
+          <div class="how-item"><span class="step-number">02 /</span><div><h3>Preview</h3><p>Open a playable to launch the real game in an interactive preview.</p></div><span class="step-icon">↗</span></div>
+          <div class="how-item"><span class="step-number">03 /</span><div><h3>Play</h3><p>Interact with the actual HTML5 ad without leaving the gallery.</p></div><span class="step-icon">↗</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-section" id="about">
+      <div class="shell closing-content">
+        <div class="closing-topline"><span>PLAYFIELD / INTERACTIVE CREATIVE GALLERY</span><span>EST. 2026</span></div>
+        <h2>Good ideas are<br /><em>made to play.</em><span aria-hidden="true">✳</span></h2>
+        <p>A fresh, flexible home for your playable ads — with room for three original experiences and the freedom to grow.</p>
+        <a href="#gallery" class="button button-light">Back to the gallery <span class="button-arrow" aria-hidden="true">↑</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-inner"><a class="footer-brand" href="#top">playfield<span>.</span></a><p>Three original games. Ready to play.</p><span>© <span id="copyright-year">2026</span> Playfield</span></div></footer>
+
+  <div class="modal-backdrop" id="preview-modal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description">
+      <button type="button" class="modal-close" id="modal-close" aria-label="Close preview">×</button>
+      <div class="modal-stage"><div class="modal-phone" id="modal-content"></div></div>
+      <div class="modal-information">
+        <div class="section-kicker" id="modal-kicker">PLAYABLE / 001</div>
+        <h2 id="modal-title">Jelly Orbit</h2>
+        <p id="modal-description"></p>
+        <div class="modal-rule"></div>
+        <span class="modal-info-label">STATUS</span>
+        <p id="modal-status" class="modal-status"></p>
+        <div class="modal-buttons">
+          <button type="button" class="button button-dark" id="modal-restart" hidden>Restart playable ↻</button>
+          <button type="button" class="button button-outline" id="modal-done">Close preview <span aria-hidden="true">↗</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
