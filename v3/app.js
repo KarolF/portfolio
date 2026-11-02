@@ -3,10 +3,10 @@ const ads = [
     id: '01',
     title: 'Jelly Orbit',
     category: 'match-3',
-    exportSize: '494 KiB',
+    exportSize: '373 KiB',
     description: 'Match jellies, turn gravity, and hatch a little cosmic friend.',
     preview: 'assets/jelly-orbit.jpg',
-    playableUrl: 'playables/jelly-orbit/index.html',
+    playableUrl: 'playables/jelly-orbit/index.html?v=dfd502d56d5c',
     technology: 'TypeScript, Canvas 2D. Packaged with Vite.',
     implementation: 'Match rules and cascades are separate from rendering. Each successful move turns gravity; swipe, tap, and keyboard controls share the same board logic.',
     interaction: 'An opening hint shows a valid swap. Matches build energy toward the final hatch, with a reduced-motion option.',
@@ -16,10 +16,10 @@ const ads = [
     id: '02',
     title: 'Tiki Treats',
     category: 'serving',
-    exportSize: '702 KiB',
+    exportSize: '570 KiB',
     description: 'Match the pastries to your guests\' orders. Keep the island café moving.',
     preview: 'assets/tiki-treats.jpg',
-    playableUrl: 'playables/tiki-treats/index.html',
+    playableUrl: 'playables/tiki-treats/index.html?v=d81dad51120f',
     technology: 'JavaScript, HTML and CSS, with a sprite atlas.',
     implementation: 'Order matching and guest feedback run in a scaled portrait layout. Artwork is packed into a sprite atlas and embedded in the export.',
     interaction: 'Tap a pastry to serve it. Orders give the player a clear target and an immediate response.'
@@ -28,10 +28,10 @@ const ads = [
     id: '03',
     title: 'Paper Boat Parade',
     category: 'puzzle',
-    exportSize: '532 KiB',
+    exportSize: '324 KiB',
     description: 'Find a clear route for each paper boat through three ponds.',
     preview: 'assets/paper-boat-parade.jpg',
-    playableUrl: 'playables/paper-boat-parade/index.html',
+    playableUrl: 'playables/paper-boat-parade/index.html?v=33a37c06879e',
     technology: 'JavaScript, HTML and CSS, with a separate puzzle engine.',
     implementation: 'The puzzle engine checks boat routes while the interface handles selection, movement, and feedback. The portrait layout accounts for screen safe areas.',
     interaction: 'An opening cue introduces the controls. Clear the boats to move on to the next pond.'
@@ -76,7 +76,7 @@ function renderModalMedia(ad) {
     if (!frame.isConnected) return;
     modalStatus.textContent = 'Ready to play. Tap or click the game.';
     // The trusted standalone exports share the gallery's origin.
-    frame.contentDocument.addEventListener('keydown', (event) => {
+    frame.contentDocument?.addEventListener('keydown', (event) => {
       if (event.key === 'Escape') {
         event.preventDefault();
         closeAd();
