@@ -40,13 +40,13 @@ const ads = [
     id: '04',
     title: 'Dinosaur Dig',
     category: 'puzzle',
-    exportSize: '372 KiB',
+    exportSize: '374 KiB',
     description: 'Move the screws, release the boards, and uncover a dinosaur fossil.',
     preview: 'assets/dinosaur-dig.jpg',
-    playableUrl: 'playables/dinosaur-dig/index.html?v=0ae759892594',
+    playableUrl: 'playables/dinosaur-dig/index.html?v=c7e327523f66',
     technology: 'TypeScript puzzle logic with SVG/HTML5 rendering; companion Cocos Creator project.',
     implementation: 'Four layered boards, eight reusable screws, fixed-pivot swings, and exact undo. Artwork and audio are embedded in one HTML file.',
-    interaction: 'A pointing-hand tutorial guides the first move. Place screws in free holes to uncover the fossil, with sound and a replayable finish.',
+    interaction: 'A pointing hand guides the first move and points to Restart when blocked. The finish shows a CTA confirmation; OK starts a new round. Audio pauses when the game loses focus.',
     credit: 'Raster artwork generated with OpenAI image tools. Gameplay effects extracted from the supplied Gemini video.'
   }
 ];
