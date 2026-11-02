@@ -35,6 +35,19 @@ const ads = [
     technology: 'JavaScript, HTML and CSS, with a separate puzzle engine.',
     implementation: 'The puzzle engine checks boat routes while the interface handles selection, movement, and feedback. The portrait layout accounts for screen safe areas.',
     interaction: 'An opening cue introduces the controls. Clear the boats to move on to the next pond.'
+  },
+  {
+    id: '04',
+    title: 'Dinosaur Dig',
+    category: 'puzzle',
+    exportSize: '372 KiB',
+    description: 'Move the screws, release the boards, and uncover a dinosaur fossil.',
+    preview: 'assets/dinosaur-dig.jpg',
+    playableUrl: 'playables/dinosaur-dig/index.html?v=0ae759892594',
+    technology: 'TypeScript puzzle logic with SVG/HTML5 rendering; companion Cocos Creator project.',
+    implementation: 'Four layered boards, eight reusable screws, fixed-pivot swings, and exact undo. Artwork and audio are embedded in one HTML file.',
+    interaction: 'A pointing-hand tutorial guides the first move. Place screws in free holes to uncover the fossil, with sound and a replayable finish.',
+    credit: 'Raster artwork generated with OpenAI image tools. Gameplay effects extracted from the supplied Gemini video.'
   }
 ];
 
