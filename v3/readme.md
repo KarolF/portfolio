@@ -29,7 +29,7 @@ Tiki Treats source is `cloudberry-cafe/tiki-template.html.in`. Rebuild with `nod
 
 Paper Boat Parade source is `paper-boat-art/game.template.html.in`, `paper-boat-art/puzzle-engine.js`, and `paper-boat-art/runtime/`. Rebuild with `node paper-boat-art/package-html.cjs`. Do not copy `game.template.html`: it is a redirect launcher.
 
-Dinosaur Dig source lives in `C:/Users/elpar/DinosaurDig`. Run `node scripts/build-playable.cjs` from that project root, then copy `output/portfolio/dinosaur-dig/index.html` here. Its standalone SVG/HTML5 build shares the puzzle logic with the Cocos project. The release is 382,488 bytes, with all six sound cues embedded. A blocked puzzle shows an animated Restart hint. Victory has one CTA, followed by a CTA-clicked popup; OK restarts the round. Audio is paused when the game loses focus.
+Dinosaur Dig source lives in `C:/Users/elpar/DinosaurDig`. Run `node scripts/build-playable.cjs` from that project root, then copy `output/portfolio/dinosaur-dig/index.html` here. Its standalone SVG/HTML5 build shares the puzzle logic with the Cocos project. The release is 382,528 bytes, with all six sound cues embedded. Released boards fall in front of the remaining puzzle. A blocked puzzle shows an animated Restart hint. Victory has one CTA, followed by a CTA-clicked popup; OK restarts the round. Audio is paused when the game loses focus.
 
 Each shipped export embeds its scripts, styles, and artwork. No separate game assets or runtime dependencies are required. After copying an export, compare its checksum with the original and test gameplay, Restart, replay, Escape, and Close through the gallery.
 
