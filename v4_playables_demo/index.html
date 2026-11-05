@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7f5f0" />
+  <meta name="description" content="I make playable ads. Try four HTML5 games by Karol Furmann and explore how they were built." />
+  <meta property="og:title" content="Karol Furmann | Playable Ads" />
+  <meta property="og:description" content="Four small games. Try them here, and see how they were built." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://karolf.github.io/portfolio/v3/assets/jelly-orbit.jpg" />
+  <title>Karol Furmann | Playable Ads</title>
+  <link rel="icon" href="../assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css?v=7e6dd783dee2" />
+  <script defer src="app.js?v=b3b1c486b1f5"></script>
+</head>
+<body>
+  <a class="skip-link" href="#gallery">Skip to games</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="Karol Furmann home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>Karol Furmann<span class="brand-dot">.</span></span></a>
+      <nav class="desktop-nav" aria-label="Main navigation"><a href="#gallery">Games</a><a href="#work">My work</a><a href="#about">About</a></nav>
+      <a class="header-cta" href="https://www.linkedin.com/in/karol-furmann-004182212/">LinkedIn <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-navigation"><span></span><span></span></button>
+    </div>
+    <nav class="mobile-nav" id="mobile-navigation" aria-label="Mobile navigation" hidden><a href="#gallery">Games</a><a href="#work">My work</a><a href="#about">About</a><a href="https://www.linkedin.com/in/karol-furmann-004182212/">LinkedIn ↗</a></nav>
+  </header>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Hi, I'm Karol.</p>
+          <h1 id="hero-title">I make<br /><em>playable ads.</em></h1>
+          <p class="hero-description">Try four browser demos, from matching jellies to uncovering a dinosaur fossil.</p>
+          <div class="hero-actions"><a href="#gallery" class="button button-dark">Play my games <span class="button-arrow" aria-hidden="true">↓</span></a><a class="quiet-link" href="../v2/">More of my work ↗</a></div>
+        </div>
+        <div class="hero-visual" role="group" aria-label="Choose a game">
+          <div class="hero-visual-grid" aria-hidden="true"></div>
+          <button class="hero-sticker" type="button" data-open-ad="01" aria-label="Play Jelly Orbit">PLAY <span aria-hidden="true">↗</span></button>
+          <button class="hero-device hero-device-left" type="button" data-open-ad="03" aria-label="Play Paper Boat Parade"><img src="assets/paper-boat-parade.jpg" alt="Paper Boat Parade" /></button>
+          <button class="hero-device hero-device-right" type="button" data-open-ad="02" aria-label="Play Tiki Treats"><img src="assets/tiki-treats.jpg" alt="Tiki Treats" /></button>
+          <button class="hero-device hero-device-center" type="button" data-open-ad="01" aria-label="Play Jelly Orbit"><img src="assets/jelly-orbit.jpg" alt="Jelly Orbit" /></button>
+          <a class="hero-caption" href="#gallery"><span class="caption-circle" aria-hidden="true">↓</span> Try something new</a>
+        </div>
+      </div>
+    </section>
+    <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+      <div class="shell">
+        <div class="section-header"><div><h2 id="gallery-title">Have a <em>go.</em></h2><p>Pick a game to play. You'll find a short breakdown alongside each one.</p></div></div>
+        <div class="gallery-grid" id="gallery-grid"></div>
+        <noscript><p>JavaScript is needed to play. Open <a href="playables/jelly-orbit/index.html">Jelly Orbit</a>, <a href="playables/tiki-treats/index.html">Tiki Treats</a>, <a href="playables/paper-boat-parade/index.html">Paper Boat Parade</a>, or <a href="playables/dinosaur-dig/index.html">Dinosaur Dig</a> directly.</p></noscript>
+      </div>
+    </section>
+    <section class="how-section" id="work" aria-labelledby="work-title">
+      <div class="shell how-grid">
+        <div class="how-intro"><h2 id="work-title">Behind<br /><em>the games.</em></h2><p>I work on gameplay programming and game design. I like the point where a simple rule starts to feel good to play: the first match, the right timing, a clear bit of feedback.</p><a class="quiet-link" href="../v2/#cosmopirates">See my work on CosmoPirates ↗</a></div>
+        <div class="how-list">
+          <div class="how-item"><div><h3>Gameplay &amp; interaction</h3><p>Rules, touch controls, hints, and the small details that help a player understand what to do.</p></div></div>
+          <div class="how-item"><div><h3>Browser development</h3><p>TypeScript and JavaScript, responsive interfaces, and standalone HTML builds. These demos load only when you open them.</p></div></div>
+          <div class="how-item"><div><h3>From prototype to release</h3><p>My wider work includes Phaser games, content tools, and CosmoPirates, a released Steam game where I worked on programming and design.</p></div></div>
+        </div>
+      </div>
+    </section>
+    <section class="closing-section" id="about" aria-labelledby="about-title">
+      <div class="shell closing-content">
+        <h2 id="about-title">A bit <em>about me.</em></h2>
+        <p>I'm Karol Furmann, a game programmer and designer. I've worked on browser, mobile, and PC games, with tools including Phaser, TypeScript, Three.js, and Electron.</p>
+        <p>This collection focuses on small playable demos. For my released games and a closer look at my experience, visit my main portfolio.</p>
+        <div class="about-actions"><a href="../v2/" class="button button-light">View full portfolio <span aria-hidden="true">↗</span></a><a href="http://www.fiverr.com/s/d0ePlEG" class="button button-light">Order on Fiverr<span aria-hidden="true">↗</span></a><a class="quiet-link" href="https://www.linkedin.com/in/karol-furmann-004182212/">Find me on LinkedIn ↗</a></div>        
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><a class="footer-brand" href="#top">Karol Furmann<span>.</span></a><span>© <span id="copyright-year">2026</span> Karol Furmann</span></div></footer>
+  <dialog class="modal-backdrop" id="preview-modal" aria-labelledby="modal-title" hidden>
+    <div class="modal">
+      <button class="modal-close" id="modal-close" type="button" aria-label="Close game" autofocus>×</button>
+      <div class="modal-stage"><div class="modal-phone" id="modal-content"></div></div>
+      <div class="modal-information">
+        <h2 id="modal-title">Jelly Orbit</h2><p id="modal-description"></p>
+        <p class="modal-status" id="modal-status" role="status"></p>
+        <div class="modal-buttons"><button class="button button-dark" id="modal-restart" type="button">Restart ↻</button><a class="button button-outline" id="modal-direct" href="playables/jelly-orbit/index.html" target="_blank" rel="noopener">Open game ↗</a></div>
+        <details class="project-breakdown"><summary>How it's built</summary><div id="modal-breakdown"></div></details>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>

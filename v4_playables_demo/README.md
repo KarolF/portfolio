@@ -35,9 +35,9 @@ Each shipped export embeds its scripts, styles, and artwork. No separate game as
 
 ## Website files
 
-- `index.html` — page structure, hero artwork, and category filters.
+- `index.html` — page structure and hero artwork.
 - `styles.css` — responsive gallery and player styling.
-- `app.js` — game metadata, filtering, iframe lifecycle, and navigation.
+- `app.js` — game metadata, iframe lifecycle, and navigation.
 - `assets/jelly-orbit.jpg`, `assets/tiki-treats.jpg`, `assets/paper-boat-parade.jpg`, `assets/dinosaur-dig.jpg` — screenshots of the shipped games, shared by cards and hero.
 - `playables/<game>/index.html` — standalone production exports.
 
